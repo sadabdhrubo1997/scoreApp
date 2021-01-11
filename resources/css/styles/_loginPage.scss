@@ -1,7 +1,8 @@
 #login_page {
-    background-color: rgb(229, 229, 229);
+    background-color: #F5F6FA;
     width: 100%;
     height: 108rem;
+    display: flex;
 
 
 
@@ -82,8 +83,313 @@
                 font-size: 2.4rem;
                 color: rgba(255, 255, 255, 0.45);
 
-                a{
+                a {
                     color: #ffffff;
+                }
+            }
+        }
+    }
+
+
+    .right {
+        height: 100%;
+        width: calc(100% - 72rem);
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 2rem;
+
+        .wrapper {
+            width: 100%;
+            width: 98rem;
+
+            .main {
+                padding: 12rem 0 15rem 2rem;
+                background-color: #fff;
+                height: 89rem;
+                border-radius: 0 0 0 4rem;
+                -webkit-border-radius: 0 0 0 4rem;
+                -moz-border-radius: 0 0 0 4rem;
+                -ms-border-radius: 0 0 0 4rem;
+                -o-border-radius: 0 0 0 4rem;
+
+                h2 {
+                    font-family: Gtw_p_medium;
+                    color: #000000;
+                    font-size: 4.5rem;
+                    margin-bottom: 1rem;
+                }
+
+                h3 {
+                    font-family: Gtw_p_regular;
+                    color: rgba(0, 0, 0, 0.8);
+                    font-size: 3.2rem;
+                    margin-bottom: 3.5rem;
+                }
+
+                form#loginForm {
+                    max-width: 73rem;
+
+
+                    .errorEmail,
+                    .errorPassword {
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        color: #ff434300;
+                        margin-top: 1rem;
+                        padding-right: 2rem;
+                        font-family: Gtw_p_medium;
+                        text-align: right;
+                        transition: .1s;
+                        -webkit-transition: .1s;
+                        -moz-transition: .1s;
+                        -ms-transition: .1s;
+                        -o-transition: .1s;
+                    }
+
+                    .errorEmail.active,
+                    .errorPassword.active {
+                        color: #FF4343;
+                    }
+
+                    .email,
+                    .password {
+                        height: 13.6rem;
+                        width: 100%;
+                        border: .15rem solid rgba(0, 0, 0, 0.1);
+                        border-radius: 2rem;
+                        -webkit-border-radius: 2rem;
+                        -moz-border-radius: 2rem;
+                        -ms-border-radius: 2rem;
+                        -o-border-radius: 2rem;
+                        padding: 1.8rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        transition: .1s;
+                        -webkit-transition: .1s;
+                        -moz-transition: .1s;
+                        -ms-transition: .1s;
+                        -o-transition: .1s;
+
+                        .left {
+                            height: 100%;
+                            width: 10rem;
+                            border-radius: 1.5rem;
+                            -webkit-border-radius: 1.5rem;
+                            -moz-border-radius: 1.5rem;
+                            -ms-border-radius: 1.5rem;
+                            -o-border-radius: 1.5rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding-top: 0;
+                            background-color: transparent;
+                            border: .15rem solid #5054EB;
+                            transition: .1s;
+                            -webkit-transition: .1s;
+                            -moz-transition: .1s;
+                            -ms-transition: .1s;
+                            -o-transition: .1s;
+
+                            svg {
+                                height: 4.8rem;
+                                width: 4.8rem;
+
+                                path {
+                                    transition: .1s;
+                                    -webkit-transition: .1s;
+                                    -moz-transition: .1s;
+                                    -ms-transition: .1s;
+                                    -o-transition: .1s;
+                                    fill: #5054EB;
+
+                                }
+                            }
+                        }
+
+                        .middle {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            width: 40rem;
+                            height: 100%;
+                            padding: .5rem 0;
+
+                            label {
+                                font-family: Gtw_p_medium;
+                                font-size: 2.1rem;
+                                cursor: pointer;
+                                display: block;
+                            }
+
+                            input[type=email] {
+                                font-size: 2.4rem;
+                                color: hsla(0, 0%, 0%, 0.5);
+                                font-family: Gtw_p_regular;
+                                border: none;
+                                outline: none;
+                                padding-bottom: .5rem;
+                            }
+
+                        }
+
+                        .right {
+                            height: 100%;
+                            width: 10rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-top: 0;
+
+                            img {
+                                width: 3.1rem;
+                                height: 3.1rem;
+                            }
+                        }
+                    }
+
+                    .email.error {
+                        border: .15rem solid #FF4343;
+
+
+
+                    }
+
+                    .email.noError {
+                        border: .15rem solid #5054EB;
+
+
+                        .left {
+                            background-color: #5054EB;
+
+                            svg {
+                                height: 4.8rem;
+                                width: 4.8rem;
+
+                                path {
+                                    fill: #ffffff;
+
+                                }
+                            }
+                        }
+                    }
+
+
+
+                    .password {
+                        margin-top: 3rem;
+
+
+                        .left {
+                            svg {
+                                width: 3.9rem;
+                                height: 4.6rem;
+
+                                path {
+                                    fill: #5054EB;
+
+                                }
+                            }
+                        }
+
+                        .middle {
+                            label {
+                                cursor: pointer;
+                            }
+
+                            input[type=password] {
+                                font-size: 4.4rem;
+                                color: rgba(128, 128, 128, 1);
+                                font-family: Gtw_p_regular;
+                                border: none;
+                                outline: none;
+                                padding-bottom: .5rem;
+                                height: 3.9rem;
+                            }
+                        }
+                    }
+
+                    .password.error {
+                        border: .15rem solid #FF4343;
+
+
+
+                    }
+
+                    .password.noError {
+                        border: .15rem solid #5054EB;
+
+                        .left {
+                            background-color: #5054EB;
+
+                            svg {
+                                height: 4.8rem;
+                                width: 4.8rem;
+
+                                path {
+                                    fill: #ffffff;
+
+                                }
+                            }
+                        }
+                    }
+
+                    .bottom_area {
+                        margin-top: 6.5rem;
+                        height: 7.5rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .left {
+                            width: 22.5rem;
+                            background-color: transparent;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            padding: 0;
+
+                            p {
+                                font-family: Gtw_p_medium;
+                                font-size: 2.1rem;
+                                color: rgba(0, 0, 0, 0.35);
+                            }
+
+                            a {
+                                display: inline;
+                                font-size: 2.1rem;
+                                font-family: Gtw_p_medium_o;
+                                color: rgba(80, 84, 235, 1);
+                            }
+
+
+
+
+                        }
+
+                        button {
+                            font-family: Gtw_p_bold;
+                            font-size: 2.4rem;
+                            color: #ffffff;
+                            width: 22rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            height: 100%;
+                            border: none;
+                            outline: none;
+                            background-color: rgba(80, 84, 235, 1);
+                            border-radius: 1rem;
+                            -webkit-border-radius: 1rem;
+                            -moz-border-radius: 1rem;
+                            -ms-border-radius: 1rem;
+                            -o-border-radius: 1rem;
+                            padding: 0 2.5rem;
+                            cursor: pointer;
+                        }
+
+                    }
                 }
             }
         }

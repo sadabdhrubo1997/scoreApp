@@ -32,6 +32,63 @@
     </div>
 
 
+    <div class="right">
+        <div class="wrapper">
+            <div class="main">
+                <h2>Welcome Back !</h2>
+                <h3>Log in here</h3>
+
+                <form autocomplete="off" id="loginForm">
+                    <div class="email">
+                        <div class="left">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M40 8H8C5.8 8 4.02 9.8 4.02 12L4 36C4 38.2 5.8 40 8 40H40C42.2 40 44 38.2 44 36V12C44 9.8 42.2 8 40 8ZM39.2 16.5L25.06 25.34C24.42 25.74 23.58 25.74 22.94 25.34L8.8 16.5C8.3 16.18 8 15.64 8 15.06C8 13.72 9.46 12.92 10.6 13.62L24 22L37.4 13.62C38.54 12.92 40 13.72 40 15.06C40 15.64 39.7 16.18 39.2 16.5Z" />
+                            </svg>
+                        </div>
+                        <div class="middle">
+                            <label for="email">Enter your email</label>
+                            <input autocomplete="off" type="email" name="email" id="email">
+                        </div>
+                        <div class="right">
+                            <img class="rightIcon" src="./resources/icons/right_mark.svg" alt="">
+                            <img class="wrongIcon" src="./resources/icons/wrong_mark.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="errorEmail" id="emailError">Invalid Email Address</div>
+                    <div class="password">
+                        <div class="left">
+                            <svg viewBox="0 0 39 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M34.125 15.3333C32.7788 15.3333 31.6875 14.242 31.6875 12.8958V10.9524C31.6875 4.90667 26.2275 0 19.5 0C12.7725 0 7.3125 4.90667 7.3125 10.9524V12.8958C7.3125 14.242 6.22119 15.3333 4.875 15.3333C2.19375 15.3333 0 17.3048 0 19.7143V41.619C0 44.0286 2.19375 46 4.875 46H34.125C36.8063 46 39 44.0286 39 41.619V19.7143C39 17.3048 36.8063 15.3333 34.125 15.3333ZM19.5 35.0476C16.8188 35.0476 14.625 33.0762 14.625 30.6667C14.625 28.2571 16.8188 26.2857 19.5 26.2857C22.1812 26.2857 24.375 28.2571 24.375 30.6667C24.375 33.0762 22.1812 35.0476 19.5 35.0476ZM16.5685 15.3333C14.1489 15.3333 12.1875 13.3719 12.1875 10.9524C12.1875 7.31619 15.4537 4.38095 19.5 4.38095C23.5462 4.38095 26.8125 7.31619 26.8125 10.9524C26.8125 13.3719 24.8511 15.3333 22.4315 15.3333H16.5685Z" />
+                            </svg>
+                        </div>
+                        <div class="middle">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="right">
+                            <img class="rightIcon" src="./resources/icons/right_mark.svg" alt="">
+                            <img class="wrongIcon" src="./resources/icons/wrong_mark.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="errorPassword" id="passwordError">Password must be minimum 8 charectar</div>
+
+                    <div class="bottom_area">
+                        <div class="left">
+                            <p>Forgot your password?</p>
+                            <span><a href="#">Click here</a></span>
+                        </div>
+                        <button id="submit_button" type="submit">Log In 
+                            <img src="./resources/icons/loginButtonArrow.png" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="./vendors/js/jquery.js"></script>
     <script src="./resources/js/main.js"></script>
