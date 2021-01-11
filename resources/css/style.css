@@ -1,0 +1,12 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 44.46614583333333%;
+}
+/*# sourceMappingURL=style.css.map */
