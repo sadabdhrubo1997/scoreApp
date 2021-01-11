@@ -1,1 +1,12 @@
+@font-face {
+    font-family: Gtw_p_bold;
+    src: url("./../font/GTWalsheimPro/GTWalsheimProBold.otf");
+}
+@font-face {
+    font-family: Gtw_p_regular;
+    src: url("./../font/GTWalsheimPro/GTWalsheimProRegular.otf");
+}
+
+
 @import './styles/common';
+@import './styles/loginPage';

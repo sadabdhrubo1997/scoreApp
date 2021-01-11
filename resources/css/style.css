@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Gtw_p_bold;
+  src: url("./../font/GTWalsheimPro/GTWalsheimProBold.otf");
+}
+
+@font-face {
+  font-family: Gtw_p_regular;
+  src: url("./../font/GTWalsheimPro/GTWalsheimProRegular.otf");
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -8,5 +18,92 @@
 
 html {
   font-size: 44.46614583333333%;
+}
+
+#login_page {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 108rem;
+}
+
+#login_page .left {
+  width: 72rem;
+  height: 100%;
+  background-color: #5054eb;
+  padding-top: 3rem;
+}
+
+#login_page .left .logo {
+  width: 35rem;
+  padding-left: 4.5rem;
+  margin-bottom: 3.5rem;
+}
+
+#login_page .left .logo a {
+  width: 100%;
+}
+
+#login_page .left .logo a img {
+  width: 100%;
+  height: auto;
+}
+
+#login_page .left .line {
+  width: 100%;
+  height: .1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 6rem;
+}
+
+#login_page .left .bottom {
+  padding-left: 4.5rem;
+}
+
+#login_page .left .bottom h2 {
+  font-family: Gtw_p_bold;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  letter-spacing: .15rem;
+}
+
+#login_page .left .bottom p {
+  max-width: 58rem;
+  font-family: Gtw_p_regular;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2.5rem;
+  letter-spacing: .15rem;
+  line-height: 1.8;
+}
+
+#login_page .left .bottom .img_wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4.5rem;
+}
+
+#login_page .left .bottom .img_wrapper img {
+  width: 52rem;
+  pointer-events: none;
+}
+
+#login_page .left .bottom .bottom_txt {
+  font-family: Gtw_p_regular;
+  padding-right: 5rem;
+  text-align: right;
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+#login_page .left .bottom .bottom_txt a {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
