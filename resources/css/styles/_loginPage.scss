@@ -96,21 +96,21 @@
         width: calc(100% - 72rem);
         display: flex;
         justify-content: flex-end;
-        padding-top: 2rem;
+        padding-top: 5rem;
 
         .wrapper {
             width: 100%;
             width: 98rem;
 
             .main {
-                padding: 12rem 0 15rem 2rem;
+                padding: 12rem 0 15rem 6rem;
                 background-color: #fff;
                 height: 89rem;
-                border-radius: 0 0 0 4rem;
-                -webkit-border-radius: 0 0 0 4rem;
-                -moz-border-radius: 0 0 0 4rem;
-                -ms-border-radius: 0 0 0 4rem;
-                -o-border-radius: 0 0 0 4rem;
+                border-radius: 0 0 4rem 4rem;
+                -webkit-border-radius: 0 0 4rem 4rem;
+                -moz-border-radius: 0 0 4rem 4rem;
+                -ms-border-radius: 0 0 4rem 4rem;
+                -o-border-radius: 0 0 4rem 4rem;
 
                 h2 {
                     font-family: Gtw_p_medium;
@@ -392,6 +392,19 @@
                     }
                 }
             }
+        }
+    }
+}
+
+
+
+// responsive
+
+
+@media (max-width : 992px) {
+    #login_page {
+        .left {
+            display: none;
         }
     }
 }
