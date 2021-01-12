@@ -17,12 +17,18 @@
 
             .logo {
                 width: 7rem;
-                height: 7rem;
-                margin-right: 15rem;
+                margin-right: 3rem;
 
-                img {
+                a {
                     width: 100%;
-                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
             }
 
@@ -211,6 +217,8 @@
         }
 
         .table {
+            margin-bottom: 6rem;
+
             table {
                 text-align: center;
                 width: 100%;
@@ -231,6 +239,7 @@
 
                     th {
                         padding: 3.2rem;
+                        font-weight: 400;
                     }
                 }
 
@@ -245,9 +254,9 @@
                         td {
                             padding: 1rem;
                             padding: 2.8rem 0;
-                           
 
-                            span.box{
+
+                            span.box {
                                 height: 3rem;
                                 width: 3rem;
                                 border-radius: .5rem;
@@ -255,12 +264,88 @@
                                 -moz-border-radius: .5rem;
                                 -ms-border-radius: .5rem;
                                 -o-border-radius: .5rem;
-                                background-color:#1BE082;
+                                background-color: #1BE082;
                                 display: block;
                                 margin: 0 auto;
-}
+                            }
                         }
                     }
+                }
+            }
+        }
+
+
+        .pagenationWrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-family: Gtw_p_medium;
+
+            .main {
+                background-color: #fff;
+                padding: 1.7rem;
+                border-radius: 1rem;
+                -webkit-border-radius: 1rem;
+                -moz-border-radius: 1rem;
+                -ms-border-radius: 1rem;
+                -o-border-radius: 1rem;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+
+                a {
+                    margin-right: 1.5rem;
+                }
+
+                a:last-child {
+                    margin: 0;
+                }
+
+                span.showUpTo {
+                    margin-right: 2rem;
+                }
+
+
+
+                a.previous {
+                    padding: 1.5rem 2.5rem;
+                    border-radius: .8rem;
+                    -webkit-border-radius: .8rem;
+                    -moz-border-radius: .8rem;
+                    -ms-border-radius: .8rem;
+                    -o-border-radius: .8rem;
+                    color: rgba(235, 57, 73, 1);
+                    background-color: rgba(235, 57, 73, 0.15);
+                    letter-spacing: .1rem;
+                }
+
+                a.next {
+                    padding: 1.5rem 2.5rem;
+                    border-radius: .8rem;
+                    -webkit-border-radius: .8rem;
+                    -moz-border-radius: .8rem;
+                    -ms-border-radius: .8rem;
+                    -o-border-radius: .8rem;
+                    color: #FFFFFF;
+                    background-color: rgba(22, 221, 125, 1);
+                    letter-spacing: .1rem;
+                }
+
+                a.pageBtn {
+                    padding: 1.5rem;
+                    background: rgba(245, 246, 250, 1);
+                    color: #555555;
+                    border-radius: .8rem;
+                    -webkit-border-radius: .8rem;
+                    -moz-border-radius: .8rem;
+                    -ms-border-radius: .8rem;
+                    -o-border-radius: .8rem;
+                }
+
+                a.pageBtn.active {
+                    background-color: #5054EB;
+                    color: #ffffff;
                 }
             }
         }
