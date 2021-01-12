@@ -1556,6 +1556,7 @@ body {
 
 #caseDetails .section2 .fileUpload form label img {
   width: 100%;
+  pointer-events: none;
 }
 
 #caseDetails .section3 {
