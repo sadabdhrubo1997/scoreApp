@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Details</title>
+    <link rel="stylesheet" href="./vendors/css/chartist.min.css">
     <link rel="stylesheet" href="resources/css/style.css">
+    <!-- <link rel="stylesheet" href="./chart.css"> -->
 </head>
 
 <body id="caseDetails">
@@ -97,7 +99,108 @@
                     <p><span class="light">Priors</span>:  No</p>
                 </div>
             </div>
+        </section>
 
+        <section class="section2">
+            <div class="left">
+                <p>Maximum Value: $ 17,028</p>
+                <p class="active">Estimated value: $ 16,470</p>
+                <p>Minimum Value: $15,912</p>
+            </div>
+
+            <div class="value_timeline">
+                <h2>Value Timeline</h2>
+                <div class="line"></div>
+                <div class="chart-container">
+                    <div id="myChart" class="chart ct-chart ct-perfect-fourth"></div>
+                </div>
+                <div class="bottom_part">
+                  <div class="box">
+                      <span class="max"></span>
+                      Maximum
+                  </div>
+                  <div class="box">
+                      <span class="min"></span>
+                      Minimun
+                  </div>
+                </div>
+            </div>
+
+            <div class="fileUpload">
+                <form>
+                    <label for="file">
+                        <img src="./resources/icons/uploadPoliceReport.png" alt="">
+                    </label>
+                    <input type="file" name="file" id="file">
+                </form>
+            </div>
+        </section>
+
+
+        <section class="section3">
+            <div class="top">
+                <div class="inner">
+                    <a class="active" href="#">All Comps</a>
+                    <a href="#">Carrier</a>
+                    <a href="#">Liability</a>
+                    <a href="#">Injuries</a>
+                    <a href="#">Medical Bills</a>
+                </div>
+            </div>
+
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CaseNum</th>
+                            <th>DOI</th>
+                            <th>Carrier</th>
+                            <th>Policy Limits</th>
+                            <th>Injury</th>
+                            <th>Medical Bills</th>
+                            <th>Settlement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>208921</td>
+                            <td>2019-04-10</td>
+                            <td>GEICO</td>
+                            <td>25/50</td>
+                            <td>Neck Sprain</td>
+                            <td>$4,200</td>
+                            <td>$14,200</td>
+                        </tr>
+                        <tr>
+                            <td>207109</td>
+                            <td>2017-01-22</td>
+                            <td>Allstate</td>
+                            <td>25/50</td>
+                            <td>Upper Back</td>
+                            <td>$3,700</td>
+                            <td>$13,850</td>
+                        </tr>
+                        <tr>
+                            <td>208332</td>
+                            <td>2018-11-22</td>
+                            <td>GEICO</td>
+                            <td>25/50</td>
+                            <td>Neck Sprain</td>
+                            <td>$3,922</td>
+                            <td>$17,500</td>
+                        </tr>
+                        <tr>
+                            <td>207581</td>
+                            <td>2016-08-01</td>
+                            <td>State Farm</td>
+                            <td>100/300</td>
+                            <td>Neck Fracture</td>
+                            <td>$8,122</td>
+                            <td>$45,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
     </div>
@@ -112,7 +215,8 @@
     <br>
 
 
-    <script src="./vendors/js/jquery.js"></script>
+    <script src="./vendors/js/chartist.min.js"></script>
+    <script src="./resources/js/script.js"></script>
     <script src="./resources/js/main.js"></script>
 </body>
 

@@ -1,9 +1,7 @@
 // dashboard
 const dotmenu = document.querySelector("#dotmenu");
 
-$("#dotmenu").click( () => {
-    alert("clicked")
-})
+
 
 
 const body = document.querySelector("html")
@@ -131,3 +129,4 @@ loginForm.addEventListener("submit", (e) => {
 })
 
 // login form end
+
