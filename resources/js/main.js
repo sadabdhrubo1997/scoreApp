@@ -112,7 +112,7 @@ loginForm.addEventListener("submit", (e) => {
         emailRightIcon.style.display = "block"
 
     }
-    if (password.value.length < 7) {
+    if (password.value.length < 8) {
         e.preventDefault()
         passwordArea.classList.add("error")
         passwordArea.classList.remove("noError")
@@ -123,8 +123,8 @@ loginForm.addEventListener("submit", (e) => {
 
     } else {
         passwordError.classList.remove("active")
-        passwordArea.classList.add("error")
-        passwordArea.classList.remove("noError")
+        passwordArea.classList.remove("error")
+        passwordArea.classList.add("noError")
         passwordWrongIcon.style.display = "none"
         passwordRightIcon.style.display = "block"
     }
