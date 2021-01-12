@@ -35,68 +35,86 @@ body {
 }
 
 #login_page {
-  background-color: #F5F6FA;
+  height: 100vh;
   width: 100%;
-  height: 108rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#login_page .left {
-  width: 72rem;
+#login_page .mainWrapper {
+  width: 135rem;
+  height: 80rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#login_page .mainWrapper .left {
+  width: 38%;
   height: 100%;
   background-color: #5054eb;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
 }
 
-#login_page .left .logo {
-  width: 35rem;
-  padding-left: 4.5rem;
-  margin-bottom: 3.5rem;
+#login_page .mainWrapper .left .logo {
+  width: 30rem;
+  height: auto;
+  margin-left: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
-#login_page .left .logo a {
+#login_page .mainWrapper .left .logo a {
   width: 100%;
+  display: block;
 }
 
-#login_page .left .logo a img {
+#login_page .mainWrapper .left .logo a img {
   width: 100%;
   height: auto;
 }
 
-#login_page .left .line {
+#login_page .mainWrapper .left .line {
   width: 100%;
   height: .1rem;
   background-color: rgba(255, 255, 255, 0.1);
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
-#login_page .left .bottom {
-  padding-left: 4.5rem;
+#login_page .mainWrapper .left .bottom {
+  padding-left: 2.5rem;
 }
 
-#login_page .left .bottom h2 {
+#login_page .mainWrapper .left .bottom h2 {
   font-family: Gtw_p_bold;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   letter-spacing: .15rem;
 }
 
-#login_page .left .bottom p {
+#login_page .mainWrapper .left .bottom p {
   max-width: 58rem;
   font-family: Gtw_p_regular;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   letter-spacing: .15rem;
   line-height: 1.8;
 }
 
-#login_page .left .bottom .img_wrapper {
+#login_page .mainWrapper .left .bottom .img_wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,24 +125,24 @@ body {
   margin-bottom: 4.5rem;
 }
 
-#login_page .left .bottom .img_wrapper img {
-  width: 52rem;
+#login_page .mainWrapper .left .bottom .img_wrapper img {
+  width: 75%;
   pointer-events: none;
 }
 
-#login_page .left .bottom .bottom_txt {
+#login_page .mainWrapper .left .bottom .bottom_txt {
   font-family: Gtw_p_regular;
   padding-right: 5rem;
   text-align: right;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: rgba(255, 255, 255, 0.45);
 }
 
-#login_page .left .bottom .bottom_txt a {
+#login_page .mainWrapper .left .bottom .bottom_txt a {
   color: #ffffff;
 }
 
-#login_page .right {
+#login_page .mainWrapper .right {
   height: 100%;
   width: calc(100% - 72rem);
   display: -webkit-box;
@@ -133,50 +151,43 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-top: 5rem;
 }
 
-#login_page .right .wrapper {
+#login_page .mainWrapper .right .wrapper {
   width: 100%;
-  width: 98rem;
 }
 
-#login_page .right .wrapper .main {
-  padding: 12rem 0 15rem 6rem;
+#login_page .mainWrapper .right .wrapper .main {
+  padding: 5rem;
   background-color: #fff;
-  height: 89rem;
-  border-radius: 0 0 4rem 4rem;
-  -webkit-border-radius: 0 0 4rem 4rem;
-  -moz-border-radius: 0 0 4rem 4rem;
-  -ms-border-radius: 0 0 4rem 4rem;
-  -o-border-radius: 0 0 4rem 4rem;
+  height: auto;
 }
 
-#login_page .right .wrapper .main h2 {
+#login_page .mainWrapper .right .wrapper .main h2 {
   font-family: Gtw_p_medium;
   color: #000000;
-  font-size: 4.5rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: .8rem;
 }
 
-#login_page .right .wrapper .main h3 {
+#login_page .mainWrapper .right .wrapper .main h3 {
   font-family: Gtw_p_regular;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 3.2rem;
-  margin-bottom: 3.5rem;
+  font-size: 2.6rem;
+  margin-bottom: 2.5rem;
 }
 
-#login_page .right .wrapper .main form#loginForm {
-  max-width: 73rem;
+#login_page .mainWrapper .right .wrapper .main form#loginForm {
+  width: 100%;
 }
 
-#login_page .right .wrapper .main form#loginForm .errorEmail,
-#login_page .right .wrapper .main form#loginForm .errorPassword {
-  font-size: 1.8rem;
+#login_page .mainWrapper .right .wrapper .main form#loginForm .errorEmail,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .errorPassword {
+  font-size: 1.6rem;
   font-weight: 400;
   color: #ff434300;
-  margin-top: 1rem;
-  padding-right: 2rem;
+  margin-top: .8rem;
+  padding-right: 1.5rem;
   font-family: Gtw_p_medium;
   text-align: right;
   transition: .1s;
@@ -186,14 +197,14 @@ body {
   -o-transition: .1s;
 }
 
-#login_page .right .wrapper .main form#loginForm .errorEmail.active,
-#login_page .right .wrapper .main form#loginForm .errorPassword.active {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .errorEmail.active,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .errorPassword.active {
   color: #FF4343;
 }
 
-#login_page .right .wrapper .main form#loginForm .email,
-#login_page .right .wrapper .main form#loginForm .password {
-  height: 13.6rem;
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password {
+  height: 10rem;
   width: 100%;
   border: 0.15rem solid rgba(0, 0, 0, 0.1);
   border-radius: 2rem;
@@ -201,7 +212,7 @@ body {
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
-  padding: 1.8rem;
+  padding: 1.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,15 +229,15 @@ body {
   -o-transition: .1s;
 }
 
-#login_page .right .wrapper .main form#loginForm .email .left,
-#login_page .right .wrapper .main form#loginForm .password .left {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .left,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .left {
   height: 100%;
-  width: 10rem;
-  border-radius: 1.5rem;
-  -webkit-border-radius: 1.5rem;
-  -moz-border-radius: 1.5rem;
-  -ms-border-radius: 1.5rem;
-  -o-border-radius: 1.5rem;
+  width: 7.5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,16 +255,17 @@ body {
   -moz-transition: .1s;
   -ms-transition: .1s;
   -o-transition: .1s;
+  margin-right: 2rem;
 }
 
-#login_page .right .wrapper .main form#loginForm .email .left svg,
-#login_page .right .wrapper .main form#loginForm .password .left svg {
-  height: 4.8rem;
-  width: 4.8rem;
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .left svg,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .left svg {
+  height: 4rem;
+  width: 4rem;
 }
 
-#login_page .right .wrapper .main form#loginForm .email .left svg path,
-#login_page .right .wrapper .main form#loginForm .password .left svg path {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .left svg path,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .left svg path {
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
@@ -262,8 +274,8 @@ body {
   fill: #5054EB;
 }
 
-#login_page .right .wrapper .main form#loginForm .email .middle,
-#login_page .right .wrapper .main form#loginForm .password .middle {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .middle,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,16 +291,16 @@ body {
   padding: .5rem 0;
 }
 
-#login_page .right .wrapper .main form#loginForm .email .middle label,
-#login_page .right .wrapper .main form#loginForm .password .middle label {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .middle label,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle label {
   font-family: Gtw_p_medium;
   font-size: 2.1rem;
   cursor: pointer;
   display: block;
 }
 
-#login_page .right .wrapper .main form#loginForm .email .middle input[type=email],
-#login_page .right .wrapper .main form#loginForm .password .middle input[type=email] {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .middle input[type=email],
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=email] {
   font-size: 2.4rem;
   color: rgba(0, 0, 0, 0.5);
   font-family: Gtw_p_regular;
@@ -297,8 +309,8 @@ body {
   padding-bottom: .5rem;
 }
 
-#login_page .right .wrapper .main form#loginForm .email .right,
-#login_page .right .wrapper .main form#loginForm .password .right {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .right,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .right {
   height: 100%;
   width: 10rem;
   display: -webkit-box;
@@ -313,52 +325,52 @@ body {
   padding-top: 0;
 }
 
-#login_page .right .wrapper .main form#loginForm .email .right img,
-#login_page .right .wrapper .main form#loginForm .password .right img {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .right img,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .right img {
   width: 3.1rem;
   height: 3.1rem;
 }
 
-#login_page .right .wrapper .main form#loginForm .email.error {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email.error {
   border: .15rem solid #FF4343;
 }
 
-#login_page .right .wrapper .main form#loginForm .email.noError {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email.noError {
   border: .15rem solid #5054EB;
 }
 
-#login_page .right .wrapper .main form#loginForm .email.noError .left {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email.noError .left {
   background-color: #5054EB;
 }
 
-#login_page .right .wrapper .main form#loginForm .email.noError .left svg {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email.noError .left svg {
   height: 4.8rem;
   width: 4.8rem;
 }
 
-#login_page .right .wrapper .main form#loginForm .email.noError .left svg path {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email.noError .left svg path {
   fill: #ffffff;
 }
 
-#login_page .right .wrapper .main form#loginForm .password {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password {
   margin-top: 3rem;
 }
 
-#login_page .right .wrapper .main form#loginForm .password .left svg {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .left svg {
   width: 3.9rem;
   height: 4.6rem;
 }
 
-#login_page .right .wrapper .main form#loginForm .password .left svg path {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .left svg path {
   fill: #5054EB;
 }
 
-#login_page .right .wrapper .main form#loginForm .password .middle label {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle label {
   cursor: pointer;
 }
 
-#login_page .right .wrapper .main form#loginForm .password .middle input[type=password] {
-  font-size: 4.4rem;
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=password] {
+  font-size: 2.4rem;
   color: gray;
   font-family: Gtw_p_regular;
   border: none;
@@ -367,30 +379,46 @@ body {
   height: 3.9rem;
 }
 
-#login_page .right .wrapper .main form#loginForm .password.error {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=password]::-webkit-input-placeholder {
+  font-size: 2.4rem;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=password]:-ms-input-placeholder {
+  font-size: 2.4rem;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=password]::-ms-input-placeholder {
+  font-size: 2.4rem;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=password]::placeholder {
+  font-size: 2.4rem;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.error {
   border: .15rem solid #FF4343;
 }
 
-#login_page .right .wrapper .main form#loginForm .password.noError {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.noError {
   border: .15rem solid #5054EB;
 }
 
-#login_page .right .wrapper .main form#loginForm .password.noError .left {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.noError .left {
   background-color: #5054EB;
 }
 
-#login_page .right .wrapper .main form#loginForm .password.noError .left svg {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.noError .left svg {
   height: 4.8rem;
   width: 4.8rem;
 }
 
-#login_page .right .wrapper .main form#loginForm .password.noError .left svg path {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.noError .left svg path {
   fill: #ffffff;
 }
 
-#login_page .right .wrapper .main form#loginForm .bottom_area {
-  margin-top: 6.5rem;
-  height: 7.5rem;
+#login_page .mainWrapper .right .wrapper .main form#loginForm .bottom_area {
+  margin-top: 6rem;
+  height: 6.5rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,7 +428,7 @@ body {
           justify-content: space-between;
 }
 
-#login_page .right .wrapper .main form#loginForm .bottom_area .left {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .bottom_area .left {
   width: 22.5rem;
   background-color: transparent;
   height: 100%;
@@ -417,24 +445,24 @@ body {
   padding: 0;
 }
 
-#login_page .right .wrapper .main form#loginForm .bottom_area .left p {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .bottom_area .left p {
   font-family: Gtw_p_medium;
-  font-size: 2.1rem;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 0.35);
 }
 
-#login_page .right .wrapper .main form#loginForm .bottom_area .left a {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .bottom_area .left a {
   display: inline;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-family: Gtw_p_medium_o;
   color: #5054eb;
 }
 
-#login_page .right .wrapper .main form#loginForm .bottom_area button {
+#login_page .mainWrapper .right .wrapper .main form#loginForm .bottom_area button {
   font-family: Gtw_p_bold;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #ffffff;
-  width: 22rem;
+  width: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -774,5 +802,25 @@ body {
   background-color: #1BE082;
   display: block;
   margin: 0 auto;
+}
+
+#caseDetails {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#caseDetails .main {
+  width: 135rem;
+  height: 80rem;
+  background-color: #8d8d8d;
 }
 /*# sourceMappingURL=style.css.map */
