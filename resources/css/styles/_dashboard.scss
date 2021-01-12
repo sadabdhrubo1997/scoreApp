@@ -217,7 +217,7 @@
         }
 
         .table {
-            margin-bottom: 6rem;
+
 
             table {
                 text-align: center;
@@ -256,7 +256,7 @@
                             padding: 2.8rem 0;
 
 
-                            span.box {
+                            .box {
                                 height: 3rem;
                                 width: 3rem;
                                 border-radius: .5rem;
@@ -264,10 +264,52 @@
                                 -moz-border-radius: .5rem;
                                 -ms-border-radius: .5rem;
                                 -o-border-radius: .5rem;
-                                background-color: #1BE082;
-                                display: block;
+                                display: inline-block;
                                 margin: 0 auto;
                             }
+
+                            .box.green {
+                                background-color: #1BE082;
+                            }
+
+                            .box.deepOrange {
+                                background-color: rgba(255, 116, 73, 1);
+                            }
+
+                            .box.lightOrange {
+                                background-color: rgba(255, 195, 166, 1);
+                            }
+
+                            span.ltgn{
+                                color: rgba(80, 84, 235, 1);
+                            }
+
+                            a {
+                                img {
+                                    height: 3rem;
+                                    display: inline-block;
+                                    margin-top: -2.5rem;
+                                    transform: scale(.8);
+                                    -webkit-transform: scale(.8);
+                                    -moz-transform: scale(.8);
+                                    -ms-transform: scale(.8);
+                                    -o-transform: scale(.8);
+                                    opacity: .4;
+                                    transition: .2s;
+                                    -webkit-transition: .2s;
+                                    -moz-transition: .2s;
+                                    -ms-transition: .2s;
+                                    -o-transition: .2s;
+                                }
+
+
+                                &:hover {
+                                    img {
+                                        opacity: .6;
+                                    }
+                                }
+                            }
+
                         }
                     }
                 }
@@ -276,6 +318,7 @@
 
 
         .pagenationWrapper {
+            margin-top: 6rem;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -296,6 +339,11 @@
 
                 a {
                     margin-right: 1.5rem;
+                    transition: .2s;
+                    -webkit-transition: .2s;
+                    -moz-transition: .2s;
+                    -ms-transition: .2s;
+                    -o-transition: .2s;
                 }
 
                 a:last-child {
@@ -318,6 +366,11 @@
                     color: rgba(235, 57, 73, 1);
                     background-color: rgba(235, 57, 73, 0.15);
                     letter-spacing: .1rem;
+
+
+                    &:hover{
+                        background-color: rgba(235, 57, 72, 0.25);
+                    }
                 }
 
                 a.next {
@@ -330,6 +383,10 @@
                     color: #FFFFFF;
                     background-color: rgba(22, 221, 125, 1);
                     letter-spacing: .1rem;
+
+                    &:hover{
+                        background-color: rgb(20, 185, 106);
+                    }
                 }
 
                 a.pageBtn {
@@ -341,11 +398,20 @@
                     -moz-border-radius: .8rem;
                     -ms-border-radius: .8rem;
                     -o-border-radius: .8rem;
+
+                    
+                    &:hover{
+                        background: rgb(235, 235, 235);
+                    }
                 }
 
                 a.pageBtn.active {
                     background-color: #5054EB;
                     color: #ffffff;
+
+                    &:hover{
+                        background-color: #3b41e9;
+                    }
                 }
             }
         }
