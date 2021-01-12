@@ -1,21 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="my_html">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Details</title>
     <link rel="stylesheet" href="resources/css/style.css">
-
 </head>
+
 <body id="caseDetails">
+    <div class="topbar">
+        <div class="left">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./resources/icons/logo.png" alt="">
+                </a>
+            </div>
+            <div class="searchBox">
+                <img src="./resources/icons/search_icon.svg" alt="">
+                <input placeholder="Search by case number" type="text">
+            </div>
 
-    
+        </div>
+        <div class="right">
+            <a href="" class="qus">
+                <img src="./resources/icons/qus.svg" alt="">
+            </a>
+            <a href="" class="profile">
+                <img src="./resources/icons/profile.svg" alt="">
+            </a>
+            <div class="name">
+                <h3>Jonathan Perkins</h3>
+                <p>Super Admin</p>
+            </div>
+            <div id="dotmenu" class="dotmenu">
+                <img src="./resources/icons/dotmenu.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="actionBar">
+            <div class="left">
+                <h3>209089 - Case Model</h3>
+                <div class="back">
+                    <a href="dashboard.html">
+                        <img src="./resources/icons/back_arrow.svg" alt=""> Back to pipeline view
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="singleBtn">
+                    <a href="#">
+                        PRE-LIT
+                    </a>
+                </div>
+                <div class="multiBtn">
+                    <a href="">All types</a>
+                    <a class="active" href="">All types</a>
+                    <a href="">All types</a>
+                    <a href="">All types</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <div class="wrapper">
+        <section class="section1">
+            <div class="single">
+                <div class="inner">
+                    <p> <span class="light">DOI:</span> 07/01/2020</p>
+                    <p><span class="light">Carrier:</span> GEICO</p>
+                    <p><span class="light">Limits:</span> 25/50</p>
+                    <p> <span class="light">Liability:</span> Unclear</p>
+                    <p> <span class="light">PD Report:</span> No</p>
+                    <p> <span class="light">Citations:</span> Unknown</p>
+                </div>
+            </div>
+            <div class="single">
+                <div class="inner">
+                    <p><span class="light">Accident type:</span> Side-Swipe</p>
+                    <p><span class="light">Injuries:</span> Neck Sprain</p>
+                    <p><span class="light">Medical Bills:</span> $5,571</p>
+                    <p><span class="light">Tx Length:</span> 162 days</p>
+                    <p><span class="light">Consistency:</span> Good</p>
+                    <p><span class="light">Prop Damage:</span> $3,871</p>
+                </div>
+            </div>
+            <div class="single">
+                <div class="inner">
+                    <p><span class="light">Liens:</span>  $4,552</p>
+                    <p><span class="light">Lost Wages:</span>  $800</p>
+                    <p><span class="light">Disability:</span>  N/A</p>
+                    <p><span class="light">Limitations:</span>  Bending, Standing</p>
+                    <p><span class="light">Priors</span>:  No</p>
+                </div>
+            </div>
 
+        </section>
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
     <script src="./vendors/js/jquery.js"></script>
     <script src="./resources/js/main.js"></script>
 </body>
+
 </html>
