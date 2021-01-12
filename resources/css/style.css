@@ -309,6 +309,30 @@ body {
   padding-bottom: .5rem;
 }
 
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .middle input[type=email]::-webkit-input-placeholder,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=email]::-webkit-input-placeholder {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .middle input[type=email]:-ms-input-placeholder,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=email]:-ms-input-placeholder {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .middle input[type=email]::-ms-input-placeholder,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=email]::-ms-input-placeholder {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email .middle input[type=email]::placeholder,
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=email]::placeholder {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 #login_page .mainWrapper .right .wrapper .main form#loginForm .email .right,
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password .right {
   height: 100%;
@@ -380,19 +404,23 @@ body {
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=password]::-webkit-input-placeholder {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=password]:-ms-input-placeholder {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=password]::-ms-input-placeholder {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password .middle input[type=password]::placeholder {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password.error {

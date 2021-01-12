@@ -228,11 +228,17 @@
 
                                 input[type=email] {
                                     font-size: 2.4rem;
-                                    color: hsla(0, 0%, 0%, 0.5);
+                                    color: rgba(0, 0, 0, 0.5);
                                     font-family: Gtw_p_regular;
                                     border: none;
                                     outline: none;
                                     padding-bottom: .5rem;
+                                }
+
+                                input[type=email]::placeholder{
+                                    font-size: 1.8rem;
+                                    color: rgba(0, 0, 0, 0.5);
+
                                 }
 
                             }
@@ -311,8 +317,11 @@
                                     height: 3.9rem;
                                 }
 
-                                input[type=password]::placeholder {
-                                    font-size: 2.4rem;
+                               
+                                input[type=password]::placeholder{
+                                    font-size: 1.8rem;
+                                    color: rgba(0, 0, 0, 0.5);
+
                                 }
                             }
                         }
