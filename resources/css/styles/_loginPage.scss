@@ -23,6 +23,7 @@
 
 
 
+
             .logo {
                 width: 30rem;
                 height: auto;
@@ -111,6 +112,8 @@
 
             .wrapper {
                 width: 100%;
+                margin-right: 10rem;
+                margin-top: 5rem;
 
                 .main {
                     padding: 5rem;
@@ -177,7 +180,7 @@
 
                             .left {
                                 height: 100%;
-                                width: 7.5rem;
+                                width: 8.5rem;
                                 border-radius: 1rem;
                                 -webkit-border-radius: 1rem;
                                 -moz-border-radius: 1rem;
@@ -197,8 +200,7 @@
                                 margin-right: 2rem;
 
                                 svg {
-                                    height: 4rem;
-                                    width: 4rem;
+                                    height: 3.5rem;
 
                                     path {
                                         transition: .1s;
@@ -218,7 +220,7 @@
                                 justify-content: space-between;
                                 width: 40rem;
                                 height: 100%;
-                                padding: .5rem 0;
+                                padding: 0;
 
                                 label {
                                     font-family: Gtw_p_medium;
@@ -228,16 +230,18 @@
                                 }
 
                                 input[type=email] {
-                                    font-size: 2.4rem;
+                                    font-size: 2rem;
                                     color: rgba(0, 0, 0, 0.5);
                                     font-family: Gtw_p_regular;
                                     border: none;
                                     outline: none;
                                     padding-bottom: .5rem;
+                                    margin-bottom: -.5rem;
+
                                 }
 
                                 input[type=email]::placeholder {
-                                    font-size: 1.8rem;
+                                    font-size: 1.6rem;
                                     color: rgba(0, 0, 0, 0.5);
 
                                 }
@@ -294,7 +298,7 @@
                             .left {
                                 svg {
                                     width: 3.9rem;
-                                    height: 4.6rem;
+
                                     transform: scale(.8);
                                     -webkit-transform: scale(.8);
                                     -moz-transform: scale(.8);
@@ -314,18 +318,19 @@
                                 }
 
                                 input[type=password] {
-                                    font-size: 2.4rem;
+                                    font-size: 2rem;
                                     color: rgba(128, 128, 128, 1);
                                     font-family: Gtw_p_regular;
                                     border: none;
                                     outline: none;
                                     padding-bottom: .5rem;
-                                    height: 3.9rem;
+                                    margin-bottom: -.5rem;
+
                                 }
 
 
                                 input[type=password]::placeholder {
-                                    font-size: 1.8rem;
+                                    font-size: 1.6rem;
                                     color: rgba(0, 0, 0, 0.5);
 
                                 }
@@ -392,10 +397,11 @@
                             }
 
                             button {
-                                font-family: Gtw_p_bold;
+                                font-family: Gtw_p_regular;
+                                font-weight: 400;
                                 font-size: 2rem;
                                 color: #ffffff;
-                                width: 20rem;
+                                width: 17rem;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
@@ -410,6 +416,11 @@
                                 -o-border-radius: 1rem;
                                 padding: 0 2.5rem;
                                 cursor: pointer;
+
+                                img {
+                                    width: 3.6rem;
+                                    height: auto;
+                                }
                             }
 
                         }
