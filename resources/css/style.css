@@ -57,6 +57,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #fff;
 }
 
 #login_page .mainWrapper .left {
@@ -1065,6 +1066,7 @@ body {
   color: #7B7B7D;
   font-size: 1.8rem;
   font-family: Gtw_p_regular;
+  font-weight: 400;
   width: 100%;
   outline: none;
   border: none;
@@ -1153,12 +1155,14 @@ body {
 
 #caseDetails .topbar .right .name h3 {
   font-family: Gtw_p_regular;
+  font-weight: 400;
   font-size: 2.1rem;
   color: #000000;
 }
 
 #caseDetails .topbar .right .name p {
   font-family: Gtw_p_regular;
+  font-weight: 400;
   font-size: 1.4rem;
   color: #6C6865;
 }
@@ -1210,6 +1214,7 @@ body {
 
 #caseDetails .wrapper .actionBar .left h3 {
   font-family: Gtw_p_regular;
+  font-weight: 400;
   font-size: 3rem;
   color: #000000;
   font-weight: 400;
@@ -1229,6 +1234,7 @@ body {
           align-items: center;
   color: #5054eb;
   font-family: Gtw_p_regular;
+  font-weight: 400;
   font-size: 2.4rem;
 }
 
@@ -1258,6 +1264,7 @@ body {
   color: #2689fd;
   font-size: 2.1rem;
   font-family: Gtw_p_regular;
+  font-weight: 400;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -1288,6 +1295,7 @@ body {
   color: #000000;
   font-size: 2.1rem;
   font-family: Gtw_p_regular;
+  font-weight: 400;
 }
 
 #caseDetails .wrapper .actionBar .right .multiBtn a.active {
@@ -1332,6 +1340,7 @@ body {
 
 #caseDetails .section1 .single .inner p {
   font-family: Gtw_p_regular;
+  font-weight: 400;
   font-size: 3rem;
   color: #000000;
   margin-bottom: 2rem;
@@ -1383,6 +1392,7 @@ body {
 #caseDetails .section2 .left p {
   opacity: .5;
   font-family: Gtw_p_regular;
+  font-weight: 400;
   color: #000000;
   font-size: 2.6rem;
   margin-bottom: 2rem;
@@ -1411,6 +1421,7 @@ body {
   margin-left: 3rem;
   font-size: 2.4rem;
   font-family: Gtw_p_regular;
+  font-weight: 400;
   color: #000000;
   margin-bottom: 1.5rem;
 }
@@ -1453,6 +1464,7 @@ body {
 
 #caseDetails .section2 .value_timeline .ct-labels .ct-label {
   font-family: Gtw_p_regular;
+  font-weight: 400;
   font-size: 1.4rem;
   color: #000000;
 }
@@ -1483,6 +1495,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: Gtw_p_regular;
+  font-weight: 400;
   font-size: 1.3rem;
 }
 
@@ -1527,6 +1540,7 @@ body {
   margin-left: 3rem;
   font-size: 2.4rem;
   font-family: Gtw_p_regular;
+  font-weight: 400;
   color: #000000;
   margin-bottom: 1.5rem;
 }
@@ -1544,24 +1558,48 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#caseDetails .section2 .case_score .bottom_main h2 {
+  text-align: center;
+  margin: 0;
+  font-family: Gtw_p_regular;
+  font-size: 2.8rem;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: .5rem;
+}
+
+#caseDetails .section2 .case_score .bottom_main h3 {
+  text-align: center;
+  margin: 0;
+  font-family: Gtw_p_regular;
+  font-size: 2.1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
 }
 
 #caseDetails .section2 .case_score .bottom_main .circle_chart {
   width: 37rem;
-  height: 37rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  zoom: 120%;
+  margin-bottom: 5rem;
 }
 
 #caseDetails .section2 .case_score .bottom_main .circle_chart .main {
-  width: 80%;
+  width: 100%;
   height: calc(37rem / 2);
   overflow: hidden;
   display: -webkit-box;
@@ -1570,8 +1608,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem 10% 5rem 10%;
 }
 
 #caseDetails .section2 .case_score .bottom_main .circle_chart .main .circle {
@@ -1584,6 +1621,58 @@ body {
   -o-border-radius: 100%;
   background: conic-gradient(#60A1FF 45deg, #FF7449 45deg 90deg, transparent 90deg 270deg, #1BE082 270deg 315deg, #FFC218 315deg);
   position: relative;
+}
+
+#caseDetails .section2 .case_score .bottom_main .circle_chart .main .circle .pointer {
+  width: 1rem;
+  height: 11rem;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  transform: translate(-50%) rotate(-40deg);
+  -webkit-transform: translate(-50%) rotate(-40deg);
+  -moz-transform: translate(-50%) rotate(-40deg);
+  -ms-transform: translate(-50%) rotate(-40deg);
+  -o-transform: translate(-50%) rotate(-40deg);
+  z-index: 1;
+}
+
+#caseDetails .section2 .case_score .bottom_main .circle_chart .main .circle span.pointer_digit {
+  position: absolute;
+  font-size: 1.4rem;
+  font-family: Gtw_p_regular;
+}
+
+#caseDetails .section2 .case_score .bottom_main .circle_chart .main .circle span.pointer_digit.d100 {
+  top: 40%;
+  left: -3rem;
+}
+
+#caseDetails .section2 .case_score .bottom_main .circle_chart .main .circle span.pointer_digit.d200 {
+  top: 10%;
+  left: 0;
+}
+
+#caseDetails .section2 .case_score .bottom_main .circle_chart .main .circle span.pointer_digit.d300 {
+  top: -7%;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+#caseDetails .section2 .case_score .bottom_main .circle_chart .main .circle span.pointer_digit.d400 {
+  top: 10%;
+  right: 0;
+}
+
+#caseDetails .section2 .case_score .bottom_main .circle_chart .main .circle span.pointer_digit.d500 {
+  top: 40%;
+  right: -3rem;
 }
 
 #caseDetails .section2 .case_score .bottom_main .circle_chart .main .circle::after {
@@ -1604,6 +1693,7 @@ body {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
+  z-index: 0;
 }
 
 #caseDetails .section2 .fileUpload {
