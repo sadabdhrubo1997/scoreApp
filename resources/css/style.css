@@ -1571,6 +1571,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 #caseDetails .section2 .case_score .bottom_main .circle_chart .main .circle {
