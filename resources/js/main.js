@@ -2,6 +2,17 @@
 const dotmenu = document.querySelector("#dotmenu");
 
 
+// case details page bottom tab
+$("#caseDetails .section3 .detailsPageBottomTab").click(function(){
+    $("#caseDetails .section3 .detailsPageBottomTab").removeClass("active")
+    $(this).addClass("active")
+})
+
+
+
+// case details page bottom tab end
+
+
 
 
 const body = document.querySelector("html")
@@ -129,4 +140,3 @@ loginForm.addEventListener("submit", (e) => {
 })
 
 // login form end
-

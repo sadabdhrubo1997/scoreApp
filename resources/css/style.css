@@ -1786,6 +1786,7 @@ body {
   color: #000000;
   display: inline-block;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 #caseDetails .section3 .top .inner a.active {
