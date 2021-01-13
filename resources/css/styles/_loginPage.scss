@@ -236,7 +236,7 @@
                                     padding-bottom: .5rem;
                                 }
 
-                                input[type=email]::placeholder{
+                                input[type=email]::placeholder {
                                     font-size: 1.8rem;
                                     color: rgba(0, 0, 0, 0.5);
 
@@ -295,6 +295,11 @@
                                 svg {
                                     width: 3.9rem;
                                     height: 4.6rem;
+                                    transform: scale(.8);
+                                    -webkit-transform: scale(.8);
+                                    -moz-transform: scale(.8);
+                                    -ms-transform: scale(.8);
+                                    -o-transform: scale(.8);
 
                                     path {
                                         fill: #5054EB;
@@ -318,8 +323,8 @@
                                     height: 3.9rem;
                                 }
 
-                               
-                                input[type=password]::placeholder{
+
+                                input[type=password]::placeholder {
                                     font-size: 1.8rem;
                                     color: rgba(0, 0, 0, 0.5);
 

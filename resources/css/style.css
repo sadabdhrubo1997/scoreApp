@@ -384,6 +384,11 @@ body {
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password .left svg {
   width: 3.9rem;
   height: 4.6rem;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password .left svg path {
