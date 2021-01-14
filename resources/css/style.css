@@ -990,6 +990,10 @@ body {
   background: #ebebeb;
 }
 
+#dashboard .wrapper .pagenationWrapper .main a:last-child:hover {
+  background: #f5f6fa;
+}
+
 #dashboard .wrapper .pagenationWrapper .main a.pageBtn.active {
   background-color: #5054EB;
   color: #ffffff;

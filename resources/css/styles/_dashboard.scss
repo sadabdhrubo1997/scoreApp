@@ -403,6 +403,10 @@
                         background: rgb(235, 235, 235);
                     }
                 }
+                a:last-child:hover{
+                    background: rgba(245, 246, 250, 1);
+                    
+                }
 
                 a.pageBtn.active {
                     background-color: #5054EB;
