@@ -370,11 +370,6 @@ body {
   background-color: #5054EB;
 }
 
-#login_page .mainWrapper .right .wrapper .main form#loginForm .email.noError .left svg {
-  height: 4.8rem;
-  width: 4.8rem;
-}
-
 #login_page .mainWrapper .right .wrapper .main form#loginForm .email.noError .left svg path {
   fill: #ffffff;
 }
@@ -440,11 +435,6 @@ body {
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password.noError .left {
   background-color: #5054EB;
-}
-
-#login_page .mainWrapper .right .wrapper .main form#loginForm .password.noError .left svg {
-  height: 4.8rem;
-  width: 4.8rem;
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password.noError .left svg path {
@@ -990,8 +980,12 @@ body {
   background: #ebebeb;
 }
 
+#dashboard .wrapper .pagenationWrapper .main a:last-child {
+  background: none;
+}
+
 #dashboard .wrapper .pagenationWrapper .main a:last-child:hover {
-  background: #f5f6fa;
+  background: rgba(245, 246, 250, 0);
 }
 
 #dashboard .wrapper .pagenationWrapper .main a.pageBtn.active {

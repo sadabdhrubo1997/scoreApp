@@ -403,8 +403,12 @@
                         background: rgb(235, 235, 235);
                     }
                 }
+
+                a:last-child{
+                    background: none;
+                }
                 a:last-child:hover{
-                    background: rgba(245, 246, 250, 1);
+                    background: rgba(245, 246, 250, 0);
                     
                 }
 
