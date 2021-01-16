@@ -193,11 +193,11 @@ body {
   padding-right: 1.5rem;
   font-family: Gtw_p_medium;
   text-align: right;
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
-  -ms-transition: .1s;
-  -o-transition: .1s;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .errorEmail.active,
@@ -225,11 +225,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
-  -ms-transition: .1s;
-  -o-transition: .1s;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .email .left,
@@ -253,11 +253,11 @@ body {
   padding-top: 0;
   background-color: transparent;
   border: .15rem solid #5054EB;
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
-  -ms-transition: .1s;
-  -o-transition: .1s;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
   margin-right: 2rem;
 }
 
@@ -269,11 +269,11 @@ body {
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .email .left svg path,
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password .left svg path {
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
-  -ms-transition: .1s;
-  -o-transition: .1s;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
   fill: #5054EB;
 }
 
@@ -351,16 +351,40 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 0;
+  padding-right: .5rem;
+  position: relative;
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .email .right img,
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password .right img {
+  position: absolute;
   width: 2.5rem;
   height: 2.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .email.error {
   border: .15rem solid #FF4343;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email.error .right img.rightIcon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email.error .right img.wrongIcon {
+  opacity: 1;
+  visibility: visible;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email.border {
+  border: .15rem solid #5054EB;
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .email.noError {
@@ -373,6 +397,11 @@ body {
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .email.noError .left svg path {
   fill: #ffffff;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email.noError .right img.rightIcon {
+  opacity: 1;
+  visibility: visible;
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password {
@@ -430,6 +459,20 @@ body {
   border: .15rem solid #FF4343;
 }
 
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.error .right img.rightIcon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.error .right img.wrongIcon {
+  opacity: 1;
+  visibility: visible;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.border {
+  border: .15rem solid #5054EB;
+}
+
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password.noError {
   border: .15rem solid #5054EB;
 }
@@ -440,6 +483,16 @@ body {
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password.noError .left svg path {
   fill: #ffffff;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.noError .right img.rightIcon {
+  opacity: 1;
+  visibility: visible;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.noError .right img.wrongIcon {
+  opacity: 0;
+  visibility: hidden;
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .bottom_area {
@@ -509,11 +562,12 @@ body {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
   padding: 0 2.5rem;
+  padding-right: 2rem;
   cursor: pointer;
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .bottom_area button img {
-  width: 3.6rem;
+  width: 3rem;
   height: auto;
 }
 

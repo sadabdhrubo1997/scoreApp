@@ -57,27 +57,41 @@ const emailError = document.querySelector("#loginForm #emailError");
 const password = document.querySelector("#loginForm #password");
 const passwordArea = document.querySelector("#loginForm .password");
 const passwordError = document.querySelector("#loginForm #passwordError");
-const emailWrongIcon = document.querySelector("#loginForm .email .right .wrongIcon");
-const emailRightIcon = document.querySelector("#loginForm .email .right .rightIcon");
-const passwordWrongIcon = document.querySelector("#loginForm .password .right .wrongIcon");
-const passwordRightIcon = document.querySelector("#loginForm .password .right .rightIcon");
+// const emailWrongIcon = document.querySelector("#loginForm .email .right .wrongIcon");
+// const emailRightIcon = document.querySelector("#loginForm .email .right .rightIcon");
+// const passwordWrongIcon = document.querySelector("#loginForm .password .right .wrongIcon");
+// const passwordRightIcon = document.querySelector("#loginForm .password .right .rightIcon");
 
-emailWrongIcon.style.display = 'none';
-emailRightIcon.style.display = 'none';
-passwordWrongIcon.style.display = 'none';
-passwordRightIcon.style.display = 'none';
+// emailWrongIcon.style.display = 'none';
+// emailRightIcon.style.display = 'none';
+// passwordWrongIcon.style.display = 'none';
+// passwordRightIcon.style.display = 'none';
 
 email.addEventListener("input", (e) => {
+
+    if(email.value){
+        emailArea.classList.add("border")
+    }else{
+        emailArea.classList.remove("border")
+    }
+
+    if(password.value){
+        passwordArea.classList.add("border")
+    }else{
+        passwordArea.classList.remove("border")
+    }
+
+
     if (email.value.includes("@") && email.value.includes(".")) {
         emailError.classList.remove("active")
         emailArea.classList.remove("error")
         emailArea.classList.add("noError");
-        emailWrongIcon.style.display = "none"
-        emailRightIcon.style.display = "block"
+        // emailWrongIcon.style.display = "none"
+        // emailRightIcon.style.display = "block"
     } else {
         emailArea.classList.remove("noError")
-        emailWrongIcon.style.display = "none"
-        emailRightIcon.style.display = "none"
+        // emailWrongIcon.style.display = "none"
+        // emailRightIcon.style.display = "none"
 
     }
 })
@@ -89,12 +103,12 @@ password.addEventListener("input", (e) => {
         passwordArea.classList.add("noError")
         passwordError.classList.remove("active")
 
-        passwordWrongIcon.style.display = "none"
-        passwordRightIcon.style.display = "block"
+        // passwordWrongIcon.style.display = "none"
+        // passwordRightIcon.style.display = "block"
     } else {
         passwordArea.classList.remove("noError")
-        passwordWrongIcon.style.display = "none"
-        passwordRightIcon.style.display = "none"
+        // passwordWrongIcon.style.display = "none"
+        // passwordRightIcon.style.display = "none"
 
     }
 })
@@ -106,14 +120,14 @@ loginForm.addEventListener("submit", (e) => {
         emailArea.classList.add("error")
         emailArea.classList.remove("noError")
         emailError.classList.add("active")
-        emailWrongIcon.style.display = "block"
-        emailRightIcon.style.display = "none"
+        // emailWrongIcon.style.display = "block"
+        // emailRightIcon.style.display = "none"
     } else {
         emailError.classList.remove("active")
         emailArea.classList.remove("error")
         emailArea.classList.add("noError")
-        emailWrongIcon.style.display = "none"
-        emailRightIcon.style.display = "block"
+        // emailWrongIcon.style.display = "none"
+        // emailRightIcon.style.display = "block"
 
     }
     if (password.value.length < 8) {
@@ -121,16 +135,16 @@ loginForm.addEventListener("submit", (e) => {
         passwordArea.classList.add("error")
         passwordArea.classList.remove("noError")
         passwordError.classList.add("active")
-        passwordWrongIcon.style.display = "block"
-        passwordRightIcon.style.display = "none"
+        // passwordWrongIcon.style.display = "block"
+        // passwordRightIcon.style.display = "none"
 
 
     } else {
         passwordError.classList.remove("active")
         passwordArea.classList.remove("error")
         passwordArea.classList.add("noError")
-        passwordWrongIcon.style.display = "none"
-        passwordRightIcon.style.display = "block"
+        // passwordWrongIcon.style.display = "none"
+        // passwordRightIcon.style.display = "block"
     }
 })
 

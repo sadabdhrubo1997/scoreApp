@@ -146,11 +146,11 @@
                             padding-right: 1.5rem;
                             font-family: Gtw_p_medium;
                             text-align: right;
-                            transition: .1s;
-                            -webkit-transition: .1s;
-                            -moz-transition: .1s;
-                            -ms-transition: .1s;
-                            -o-transition: .1s;
+                            transition: .5s;
+                            -webkit-transition: .5s;
+                            -moz-transition: .5s;
+                            -ms-transition: .5s;
+                            -o-transition: .5s;
                         }
 
                         .errorEmail.active,
@@ -172,11 +172,11 @@
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
-                            transition: .1s;
-                            -webkit-transition: .1s;
-                            -moz-transition: .1s;
-                            -ms-transition: .1s;
-                            -o-transition: .1s;
+                            transition: .5s;
+                            -webkit-transition: .5s;
+                            -moz-transition: .5s;
+                            -ms-transition: .5s;
+                            -o-transition: .5s;
 
                             .left {
                                 height: 100%;
@@ -192,11 +192,11 @@
                                 padding-top: 0;
                                 background-color: transparent;
                                 border: .15rem solid #5054EB;
-                                transition: .1s;
-                                -webkit-transition: .1s;
-                                -moz-transition: .1s;
-                                -ms-transition: .1s;
-                                -o-transition: .1s;
+                                transition: .5s;
+                                -webkit-transition: .5s;
+                                -moz-transition: .5s;
+                                -ms-transition: .5s;
+                                -o-transition: .5s;
                                 margin-right: 2rem;
 
                                 svg {
@@ -204,13 +204,12 @@
                                     width: 3.3rem;
 
                                     path {
-                                        transition: .1s;
-                                        -webkit-transition: .1s;
-                                        -moz-transition: .1s;
-                                        -ms-transition: .1s;
-                                        -o-transition: .1s;
+                                        transition: .5s;
+                                        -webkit-transition: .5s;
+                                        -moz-transition: .5s;
+                                        -ms-transition: .5s;
+                                        -o-transition: .5s;
                                         fill: #5054EB;
-
                                     }
                                 }
                             }
@@ -256,10 +255,20 @@
                                 justify-content: center;
                                 align-items: center;
                                 padding-top: 0;
+                                padding-right: .5rem;
+                                position: relative;
 
                                 img {
+                                    position: absolute;
                                     width: 2.5rem;
                                     height: 2.5rem;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: .5s;
+                                    -webkit-transition: .5s;
+                                    -moz-transition: .5s;
+                                    -ms-transition: .5s;
+                                    -o-transition: .5s;
                                 }
                             }
                         }
@@ -267,24 +276,42 @@
                         .email.error {
                             border: .15rem solid #FF4343;
 
+                            .right {
+                                img.rightIcon {
+                                    opacity: 0;
+                                    visibility: hidden;
+                                }
 
+                                img.wrongIcon{
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
 
+                        }
+
+                        .email.border {
+                            border: .15rem solid #5054EB;
                         }
 
                         .email.noError {
                             border: .15rem solid #5054EB;
 
-
                             .left {
                                 background-color: #5054EB;
 
                                 svg {
-                           
-
                                     path {
                                         fill: #ffffff;
 
                                     }
+                                }
+                            }
+
+                            .right {
+                                img.rightIcon {
+                                    opacity: 1;
+                                    visibility: visible;
                                 }
                             }
                         }
@@ -339,8 +366,21 @@
                         .password.error {
                             border: .15rem solid #FF4343;
 
+                            .right {
+                                img.rightIcon {
+                                    opacity: 0;
+                                    visibility: hidden;
+                                }
 
+                                img.wrongIcon{
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+                        }
 
+                        .password.border {
+                            border: .15rem solid #5054EB;
                         }
 
                         .password.noError {
@@ -350,12 +390,21 @@
                                 background-color: #5054EB;
 
                                 svg {
-                              
-
                                     path {
                                         fill: #ffffff;
-
                                     }
+                                }
+                            }
+
+                            .right {
+                                img.rightIcon {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+
+                                img.wrongIcon{
+                                    opacity: 0;
+                                    visibility: hidden;
                                 }
                             }
                         }
@@ -413,10 +462,11 @@
                                 -ms-border-radius: 1rem;
                                 -o-border-radius: 1rem;
                                 padding: 0 2.5rem;
+                                padding-right: 2rem;
                                 cursor: pointer;
 
                                 img {
-                                    width: 3.6rem;
+                                    width: 3rem;
                                     height: auto;
                                 }
                             }
