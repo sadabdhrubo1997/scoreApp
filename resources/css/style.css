@@ -1032,6 +1032,7 @@ body {
           justify-content: center;
   font-size: 1.8rem;
   font-family: Gtw_p_medium;
+  font-weight: 500;
 }
 
 #dashboard .wrapper .pagenationWrapper .main {
@@ -1113,6 +1114,9 @@ body {
   width: 5.5rem;
   border: none;
   outline: none;
+  font-size: 1.8rem;
+  font-family: Gtw_p_medium;
+  font-weight: 500;
 }
 
 #dashboard .wrapper .pagenationWrapper .main .pageBtn:hover {
