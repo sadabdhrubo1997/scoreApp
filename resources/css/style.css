@@ -1136,10 +1136,6 @@ body {
   color: #ffffff;
 }
 
-#dashboard .wrapper .pagenationWrapper .main a.pageBtn.active:hover {
-  background-color: #3b41e9;
-}
-
 #caseDetails {
   padding-top: 15rem;
 }
