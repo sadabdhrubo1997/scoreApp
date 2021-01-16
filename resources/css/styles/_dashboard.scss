@@ -1,4 +1,5 @@
 #dashboard {
+    padding-top: 15rem;
     .topbar {
         width: 100%;
         height: 12rem;
@@ -8,6 +9,12 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 3rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999999999;
+
 
 
         .left {
@@ -72,11 +79,11 @@
 
         .right {
             display: flex;
-            height: 5rem;
+            height: 6rem;
 
             .qus {
                 height: 100%;
-                width: 5rem;
+                width: 6rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -87,16 +94,44 @@
                 -moz-border-radius: .5rem;
                 -ms-border-radius: .5rem;
                 -o-border-radius: .5rem;
+                transition: .3s;
+                -webkit-transition: .5s;
+                -moz-transition: .5s;
+                -ms-transition: .5s;
+                -o-transition: .5s;
 
-                img {
+                svg {
                     width: 2.3rem;
-                    height: auto;
+                    height: 2.4rem;
+
+                    path {
+                        fill: rgba(19, 30, 64, .5);
+                        transition: .3s;
+                        -webkit-transition: .3s;
+                        -moz-transition: .3s;
+                        -ms-transition: .3s;
+                        -o-transition: .3s;
+                    }
+
                 }
+
+
+                &:hover {
+                    background-color: rgba(80, 84, 235, 1);
+
+                    svg{
+                        path{
+                            fill: #ffffff;
+                        }
+                    }
+                }
+
+
             }
 
             .profile {
                 height: 100%;
-                width: 5rem;
+                width: 6rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -107,10 +142,35 @@
                 -ms-border-radius: .5rem;
                 -o-border-radius: .5rem;
                 margin-right: 2.4rem;
+                transition: .3s;
+                -webkit-transition: .3s;
+                -moz-transition: .3s;
+                -ms-transition: .3s;
+                -o-transition: .3s;
 
-                img {
+                svg {
                     width: 2.6rem;
-                    height: auto;
+                    height: 2.6rem;
+
+                    path {
+                        fill: rgba(19, 30, 64, .5);
+                        transition: .3s;
+                        -webkit-transition: .3s;
+                        -moz-transition: .3s;
+                        -ms-transition: .3s;
+                        -o-transition: .3s;
+                    }
+
+                }
+
+                &:hover {
+                    background-color: rgba(80, 84, 235, 1);
+
+                    svg{
+                        path{
+                            fill: #ffffff;
+                        }
+                    }
                 }
             }
 
@@ -132,14 +192,15 @@
 
                 p {
                     font-family: Gtw_p_regular;
-                    font-size: 1.8rem;
+                    font-weight: 400;
+                    font-size: 1.6rem;
                     color: rgba(108, 104, 101, 0.6);
                 }
             }
 
             .dotmenu {
-                width: 2.3rem;
-                height: 5rem;
+                width: 2.5rem;
+                height: 6rem;
                 cursor: pointer;
 
                 img {
@@ -156,6 +217,7 @@
     .wrapper {
         width: 180rem;
         margin: 0 auto;
+        z-index: 1;
 
         .actionBar {
             width: 100%;
@@ -163,7 +225,7 @@
             justify-content: space-between;
             align-items: center;
             height: 8rem;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
 
             .left {
                 height: 100%;
@@ -177,6 +239,8 @@
                     margin-right: 8rem;
                 }
             }
+
+
 
             .right {
                 width: 39rem;
@@ -206,15 +270,21 @@
                     color: #000000;
                     text-decoration: none;
                     font-family: Gtw_p_regular;
+                    font-weight: 400;
                     font-size: 2.1rem;
-                }
+                    cursor: pointer;
+                    transition: .1s;
+                    -webkit-transition: .1s;
+                    -moz-transition: .1s;
+                    -ms-transition: .1s;
+                    -o-transition: .1s;
+}
 
                 a.active {
                     background-color: rgba(80, 84, 235, 1);
                     color: #ffffff;
                 }
             }
-
         }
 
         .table {
@@ -279,7 +349,7 @@
                                 background-color: rgba(255, 195, 166, 1);
                             }
 
-                            span.ltgn{
+                            span.ltgn {
                                 color: rgba(80, 84, 235, 1);
                             }
 
@@ -299,6 +369,8 @@
                                     -moz-transition: .2s;
                                     -ms-transition: .2s;
                                     -o-transition: .2s;
+                                    position: relative;
+                                    z-index: 0;
                                 }
 
 
@@ -367,7 +439,7 @@
                     letter-spacing: .1rem;
 
 
-                    &:hover{
+                    &:hover {
                         background-color: rgba(235, 57, 72, 0.25);
                     }
                 }
@@ -383,7 +455,7 @@
                     background-color: rgba(22, 221, 125, 1);
                     letter-spacing: .1rem;
 
-                    &:hover{
+                    &:hover {
                         background-color: rgb(20, 185, 106);
                     }
                 }
@@ -398,25 +470,26 @@
                     -ms-border-radius: .8rem;
                     -o-border-radius: .8rem;
 
-                    
-                    &:hover{
+
+                    &:hover {
                         background: rgb(235, 235, 235);
                     }
                 }
 
-                a:last-child{
+                a:last-child {
                     background: none;
                 }
-                a:last-child:hover{
+
+                a:last-child:hover {
                     background: rgba(245, 246, 250, 0);
-                    
+
                 }
 
                 a.pageBtn.active {
                     background-color: #5054EB;
                     color: #ffffff;
 
-                    &:hover{
+                    &:hover {
                         background-color: #3b41e9;
                     }
                 }

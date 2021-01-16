@@ -35,4 +35,6 @@ let options = {
 	}
 };
 
+
+
 new Chartist.Line('#myChart', data, options);

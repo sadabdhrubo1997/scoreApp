@@ -1,6 +1,59 @@
 // dashboard
 const dotmenu = document.querySelector("#dotmenu");
 
+// dashboard action bar right btn toggle
+$("#dashboardActionOne").click(function(){
+    $("#dashboardActionTwo").removeClass("active")
+    $(this).addClass("active")
+})
+$("#dashboardActionTwo").click(function(){
+    $("#dashboardActionOne").removeClass("active")
+    $(this).addClass("active")
+})
+
+
+
+// caseDetails Multi Button
+
+$("#caseDetaileMultiBtnAll").click(function(){
+    $("#caseDetaileMultiBtnLibality").removeClass("active")
+    $("#caseDetaileMultiBtnUM").removeClass("active")
+    $("#caseDetaileMultiBtnUIM").removeClass("active")
+    $(this).addClass("active")
+    
+})
+$("#caseDetaileMultiBtnLibality").click(function(){
+    $("#caseDetaileMultiBtnAll").removeClass("active")
+    $("#caseDetaileMultiBtnUM").removeClass("active")
+    $("#caseDetaileMultiBtnUIM").removeClass("active")
+     $(this).addClass("active")
+
+})
+$("#caseDetaileMultiBtnUM").click(function(){
+    $("#caseDetaileMultiBtnAll").removeClass("active")
+    $("#caseDetaileMultiBtnLibality").removeClass("active")
+    $("#caseDetaileMultiBtnUIM").removeClass("active")
+     $(this).addClass("active")
+
+})
+$("#caseDetaileMultiBtnUIM").click(function(){
+    $("#caseDetaileMultiBtnAll").removeClass("active")
+    $("#caseDetaileMultiBtnLibality").removeClass("active")
+    $("#caseDetaileMultiBtnUM").removeClass("active")
+     $(this).addClass("active")
+
+})
+
+
+
+
+
+
+
+
+
+
+
 
 // case details page bottom tab
 $("#caseDetails .section3 .detailsPageBottomTab").click(function(){

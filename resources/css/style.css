@@ -577,6 +577,10 @@ body {
   }
 }
 
+#dashboard {
+  padding-top: 15rem;
+}
+
 #dashboard .topbar {
   width: 100%;
   height: 12rem;
@@ -592,6 +596,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999999999;
 }
 
 #dashboard .topbar .left {
@@ -672,12 +681,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 5rem;
+  height: 6rem;
 }
 
 #dashboard .topbar .right .qus {
   height: 100%;
-  width: 5rem;
+  width: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,16 +703,39 @@ body {
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
 }
 
-#dashboard .topbar .right .qus img {
+#dashboard .topbar .right .qus svg {
   width: 2.3rem;
-  height: auto;
+  height: 2.4rem;
+}
+
+#dashboard .topbar .right .qus svg path {
+  fill: rgba(19, 30, 64, 0.5);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+#dashboard .topbar .right .qus:hover {
+  background-color: #5054eb;
+}
+
+#dashboard .topbar .right .qus:hover svg path {
+  fill: #ffffff;
 }
 
 #dashboard .topbar .right .profile {
   height: 100%;
-  width: 5rem;
+  width: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -720,11 +752,33 @@ body {
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
   margin-right: 2.4rem;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
 }
 
-#dashboard .topbar .right .profile img {
+#dashboard .topbar .right .profile svg {
   width: 2.6rem;
-  height: auto;
+  height: 2.6rem;
+}
+
+#dashboard .topbar .right .profile svg path {
+  fill: rgba(19, 30, 64, 0.5);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+#dashboard .topbar .right .profile:hover {
+  background-color: #5054eb;
+}
+
+#dashboard .topbar .right .profile:hover svg path {
+  fill: #ffffff;
 }
 
 #dashboard .topbar .right .name {
@@ -752,13 +806,14 @@ body {
 
 #dashboard .topbar .right .name p {
   font-family: Gtw_p_regular;
-  font-size: 1.8rem;
+  font-weight: 400;
+  font-size: 1.6rem;
   color: rgba(108, 104, 101, 0.6);
 }
 
 #dashboard .topbar .right .dotmenu {
-  width: 2.3rem;
-  height: 5rem;
+  width: 2.5rem;
+  height: 6rem;
   cursor: pointer;
 }
 
@@ -770,6 +825,7 @@ body {
 #dashboard .wrapper {
   width: 180rem;
   margin: 0 auto;
+  z-index: 1;
 }
 
 #dashboard .wrapper .actionBar {
@@ -784,7 +840,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 8rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 #dashboard .wrapper .actionBar .left {
@@ -845,7 +901,14 @@ body {
   color: #000000;
   text-decoration: none;
   font-family: Gtw_p_regular;
+  font-weight: 400;
   font-size: 2.1rem;
+  cursor: pointer;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  -ms-transition: .1s;
+  -o-transition: .1s;
 }
 
 #dashboard .wrapper .actionBar .right a.active {
@@ -934,6 +997,8 @@ body {
   -moz-transition: .2s;
   -ms-transition: .2s;
   -o-transition: .2s;
+  position: relative;
+  z-index: 0;
 }
 
 #dashboard .wrapper .table table tbody tr td a:hover img {
@@ -1052,6 +1117,10 @@ body {
   background-color: #3b41e9;
 }
 
+#caseDetails {
+  padding-top: 15rem;
+}
+
 #caseDetails .topbar {
   width: 100%;
   height: 12rem;
@@ -1067,6 +1136,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999999999;
 }
 
 #caseDetails .topbar .left {
@@ -1148,12 +1222,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 5rem;
+  height: 6rem;
 }
 
 #caseDetails .topbar .right .qus {
   height: 100%;
-  width: 5rem;
+  width: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1170,16 +1244,39 @@ body {
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
 }
 
-#caseDetails .topbar .right .qus img {
+#caseDetails .topbar .right .qus svg {
   width: 2.3rem;
-  height: auto;
+  height: 2.4rem;
+}
+
+#caseDetails .topbar .right .qus svg path {
+  fill: rgba(19, 30, 64, 0.5);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+#caseDetails .topbar .right .qus:hover {
+  background-color: #5054eb;
+}
+
+#caseDetails .topbar .right .qus:hover svg path {
+  fill: #ffffff;
 }
 
 #caseDetails .topbar .right .profile {
   height: 100%;
-  width: 5rem;
+  width: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1196,11 +1293,33 @@ body {
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
   margin-right: 2.4rem;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
 }
 
-#caseDetails .topbar .right .profile img {
+#caseDetails .topbar .right .profile svg {
   width: 2.6rem;
-  height: auto;
+  height: 2.6rem;
+}
+
+#caseDetails .topbar .right .profile svg path {
+  fill: rgba(19, 30, 64, 0.5);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+#caseDetails .topbar .right .profile:hover {
+  background-color: #5054eb;
+}
+
+#caseDetails .topbar .right .profile:hover svg path {
+  fill: #ffffff;
 }
 
 #caseDetails .topbar .right .name {
@@ -1229,13 +1348,13 @@ body {
 #caseDetails .topbar .right .name p {
   font-family: Gtw_p_regular;
   font-weight: 400;
-  font-size: 1.4rem;
-  color: #6C6865;
+  font-size: 1.6rem;
+  color: rgba(108, 104, 101, 0.6);
 }
 
 #caseDetails .topbar .right .dotmenu {
-  width: 2.3rem;
-  height: 5rem;
+  width: 2.5rem;
+  height: 6rem;
   cursor: pointer;
 }
 
@@ -1247,6 +1366,7 @@ body {
 #caseDetails .wrapper {
   width: 180rem;
   margin: 0 auto;
+  z-index: 1;
 }
 
 #caseDetails .wrapper .actionBar {
@@ -1261,7 +1381,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 
 #caseDetails .wrapper .actionBar .left {
@@ -1336,6 +1456,17 @@ body {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  cursor: pointer;
+}
+
+#caseDetails .wrapper .actionBar .right .singleBtn a:hover {
+  background-color: #5054eb;
+  color: #ffffff;
 }
 
 #caseDetails .wrapper .actionBar .right .multiBtn {
@@ -1362,6 +1493,7 @@ body {
   font-size: 2.1rem;
   font-family: Gtw_p_regular;
   font-weight: 400;
+  cursor: pointer;
 }
 
 #caseDetails .wrapper .actionBar .right .multiBtn a.active {
@@ -1535,6 +1667,9 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   color: #000000;
+  height: 8.2rem;
+  position: absolute;
+  top: 1rem;
 }
 
 #caseDetails .section2 .value_timeline .ct-labels .ct-label.ct-horizontal {
@@ -1795,6 +1930,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -1808,13 +1947,24 @@ body {
 }
 
 #caseDetails .section2 .fileUpload form label img {
-  width: 100%;
+  width: 60%;
+  pointer-events: none;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+#caseDetails .section2 .fileUpload form label p {
+  color: #5054eb;
+  font-family: Gtw_p_regular;
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-align: center;
   pointer-events: none;
 }
 
 #caseDetails .section3 {
   background-color: #fff;
-  padding: 3rem 0 3rem 0;
+  padding: 3rem 0 1rem 0;
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
@@ -1825,7 +1975,7 @@ body {
 #caseDetails .section3 .top {
   width: 100%;
   padding: 0 3.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 #caseDetails .section3 .top .inner {
