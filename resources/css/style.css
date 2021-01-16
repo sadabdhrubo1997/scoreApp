@@ -373,6 +373,14 @@ body {
   border: .15rem solid #FF4343;
 }
 
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email.error .left {
+  border-color: #FF4343;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .email.error .left svg path {
+  fill: #FF4343;
+}
+
 #login_page .mainWrapper .right .wrapper .main form#loginForm .email.error .right img.rightIcon {
   opacity: 0;
   visibility: hidden;
@@ -457,6 +465,14 @@ body {
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password.error {
   border: .15rem solid #FF4343;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.error .left {
+  border-color: #FF4343;
+}
+
+#login_page .mainWrapper .right .wrapper .main form#loginForm .password.error .left svg path {
+  fill: #FF4343;
 }
 
 #login_page .mainWrapper .right .wrapper .main form#loginForm .password.error .right img.rightIcon {
@@ -1085,7 +1101,7 @@ body {
   background-color: #14b96a;
 }
 
-#dashboard .wrapper .pagenationWrapper .main a.pageBtn {
+#dashboard .wrapper .pagenationWrapper .main .pageBtn {
   padding: 1.5rem;
   background: #f5f6fa;
   color: #555555;
@@ -1094,10 +1110,13 @@ body {
   -moz-border-radius: .8rem;
   -ms-border-radius: .8rem;
   -o-border-radius: .8rem;
+  width: 5.5rem;
+  border: none;
+  outline: none;
 }
 
-#dashboard .wrapper .pagenationWrapper .main a.pageBtn:hover {
-  background: #ebebeb;
+#dashboard .wrapper .pagenationWrapper .main .pageBtn:hover {
+  background: #f5f6fa;
 }
 
 #dashboard .wrapper .pagenationWrapper .main a:last-child {

@@ -460,7 +460,7 @@
                     }
                 }
 
-                a.pageBtn {
+                .pageBtn {
                     padding: 1.5rem;
                     background: rgba(245, 246, 250, 1);
                     color: #555555;
@@ -469,10 +469,13 @@
                     -moz-border-radius: .8rem;
                     -ms-border-radius: .8rem;
                     -o-border-radius: .8rem;
+                    width: 5.5rem;
+                    border: none;
+                    outline: none;
 
 
                     &:hover {
-                        background: rgb(235, 235, 235);
+                        background: rgba(245, 246, 250, 1);
                     }
                 }
 

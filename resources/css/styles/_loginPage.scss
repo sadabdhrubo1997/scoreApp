@@ -276,6 +276,16 @@
                         .email.error {
                             border: .15rem solid #FF4343;
 
+
+                            .left{
+                                border-color:  #FF4343;
+                                svg{
+                                    path{
+                                        fill:  #FF4343;
+                                    }
+                                }
+                            }
+
                             .right {
                                 img.rightIcon {
                                     opacity: 0;
@@ -365,6 +375,15 @@
 
                         .password.error {
                             border: .15rem solid #FF4343;
+
+                            .left{
+                                border-color:  #FF4343;
+                                svg{
+                                    path{
+                                        fill:  #FF4343;
+                                    }
+                                }
+                            }
 
                             .right {
                                 img.rightIcon {
