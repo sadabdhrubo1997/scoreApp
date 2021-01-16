@@ -71,14 +71,14 @@ email.addEventListener("input", (e) => {
 
     if(email.value){
         emailArea.classList.add("border")
+        emailArea.classList.remove("error")
+        emailError.classList.remove("active")
+
+     
     }else{
         emailArea.classList.remove("border")
-    }
-
-    if(password.value){
-        passwordArea.classList.add("border")
-    }else{
-        passwordArea.classList.remove("border")
+        emailArea.classList.remove("error")
+        emailError.classList.remove("active")
     }
 
 
@@ -98,6 +98,21 @@ email.addEventListener("input", (e) => {
 
 password.addEventListener("input", (e) => {
     passwordError.classList.remove("active")
+
+
+
+    
+    if(password.value){
+        passwordArea.classList.add("border")
+        passwordArea.classList.remove("error")
+        passwordError.classList.remove("active")
+        
+    }else{
+        passwordArea.classList.remove("border")
+        passwordArea.classList.remove("error")
+        passwordError.classList.remove("active")
+    }
+
 
     if (password.value.length >= 8) {
         passwordArea.classList.add("noError")
@@ -122,6 +137,7 @@ loginForm.addEventListener("submit", (e) => {
         emailError.classList.add("active")
         // emailWrongIcon.style.display = "block"
         // emailRightIcon.style.display = "none"
+        emailArea.classList.remove("border")
     } else {
         emailError.classList.remove("active")
         emailArea.classList.remove("error")
@@ -137,6 +153,8 @@ loginForm.addEventListener("submit", (e) => {
         passwordError.classList.add("active")
         // passwordWrongIcon.style.display = "block"
         // passwordRightIcon.style.display = "none"
+        passwordArea.classList.remove("border")
+
 
 
     } else {
