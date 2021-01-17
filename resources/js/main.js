@@ -45,16 +45,6 @@ $("#caseDetaileMultiBtnUIM").click(function(){
 })
 
 
-
-
-
-
-
-
-
-
-
-
 // case details page bottom tab
 $("#caseDetails .section3 .detailsPageBottomTab").click(function(){
     $("#caseDetails .section3 .detailsPageBottomTab").removeClass("active")
