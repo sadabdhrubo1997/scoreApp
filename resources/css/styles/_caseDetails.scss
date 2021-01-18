@@ -664,6 +664,7 @@
                                 -ms-transform: translate(-50%) rotate(-40deg);
                                 -o-transform: translate(-50%) rotate(-40deg);
                                 z-index: 1;
+                                pointer-events: none;
                             }
 
                             span.pointer_digit {

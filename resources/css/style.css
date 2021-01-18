@@ -1876,6 +1876,7 @@ body {
   -ms-transform: translate(-50%) rotate(-40deg);
   -o-transform: translate(-50%) rotate(-40deg);
   z-index: 1;
+  pointer-events: none;
 }
 
 #caseDetails .section2 .case_score .bottom_main .circle_chart .main .circle span.pointer_digit {
