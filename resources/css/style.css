@@ -1621,7 +1621,7 @@ body {
 }
 
 #caseDetails .section2 .left p {
-  opacity: .5;
+  opacity: .4;
   font-family: Gtw_p_regular;
   font-weight: 400;
   color: #000000;
@@ -1635,6 +1635,7 @@ body {
 
 #caseDetails .section2 .left p.active {
   opacity: 1;
+  font-size: 3.2rem;
   font-weight: 500;
   font-family: Gtw_p_medium;
 }
@@ -1858,7 +1859,7 @@ body {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
-  background: conic-gradient(#60A1FF 45deg, #FF7449 45deg 90deg, transparent 90deg 270deg, #1BE082 270deg 315deg, #FFC218 315deg);
+  background: conic-gradient(#60A1FF 45deg, #1BE082 45deg 90deg, transparent 90deg 270deg, #f53535 270deg 315deg, #FFC218 315deg);
   position: relative;
 }
 
