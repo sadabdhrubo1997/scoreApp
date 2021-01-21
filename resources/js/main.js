@@ -2,11 +2,11 @@
 const dotmenu = document.querySelector("#dotmenu");
 
 // dashboard action bar right btn toggle
-$("#dashboardActionOne").click(function(){
+$("#dashboardActionOne").click(function () {
     $("#dashboardActionTwo").removeClass("active")
     $(this).addClass("active")
 })
-$("#dashboardActionTwo").click(function(){
+$("#dashboardActionTwo").click(function () {
     $("#dashboardActionOne").removeClass("active")
     $(this).addClass("active")
 })
@@ -15,43 +15,117 @@ $("#dashboardActionTwo").click(function(){
 
 // caseDetails Multi Button
 
-$("#caseDetaileMultiBtnAll").click(function(){
+$("#caseDetaileMultiBtnAll").click(function () {
     $("#caseDetaileMultiBtnLibality").removeClass("active")
     $("#caseDetaileMultiBtnUM").removeClass("active")
     $("#caseDetaileMultiBtnUIM").removeClass("active")
     $(this).addClass("active")
-    
+
 })
-$("#caseDetaileMultiBtnLibality").click(function(){
+$("#caseDetaileMultiBtnLibality").click(function () {
     $("#caseDetaileMultiBtnAll").removeClass("active")
     $("#caseDetaileMultiBtnUM").removeClass("active")
     $("#caseDetaileMultiBtnUIM").removeClass("active")
-     $(this).addClass("active")
+    $(this).addClass("active")
 
 })
-$("#caseDetaileMultiBtnUM").click(function(){
+$("#caseDetaileMultiBtnUM").click(function () {
     $("#caseDetaileMultiBtnAll").removeClass("active")
     $("#caseDetaileMultiBtnLibality").removeClass("active")
     $("#caseDetaileMultiBtnUIM").removeClass("active")
-     $(this).addClass("active")
+    $(this).addClass("active")
 
 })
-$("#caseDetaileMultiBtnUIM").click(function(){
+$("#caseDetaileMultiBtnUIM").click(function () {
     $("#caseDetaileMultiBtnAll").removeClass("active")
     $("#caseDetaileMultiBtnLibality").removeClass("active")
     $("#caseDetaileMultiBtnUM").removeClass("active")
-     $(this).addClass("active")
+    $(this).addClass("active")
 
 })
 
 
 // case details page bottom tab
-$("#caseDetails .section3 .detailsPageBottomTab").click(function(){
+$("#caseDetails .section3 .detailsPageBottomTab").click(function () {
     $("#caseDetails .section3 .detailsPageBottomTab").removeClass("active")
     $(this).addClass("active")
 })
 
 // case details page bottom tab end
+
+
+// case details pointer progress
+let myHead = document.querySelector("#myHead")
+let pointer = document.querySelector("#pointer")
+var style = document.createElement('style');
+style.type = 'text/css';
+
+let stopAngle = 0;
+
+
+setTimeout(() => {
+    pointer.classList.add("stop")
+
+}, 2000);
+
+var keyFrames = `
+    #pointer{
+    animation: pointerRotateAnimation 2s;
+    -webkit-animation: pointerRotateAnimation 2s;
+    transform: translate(-50%) rotate(-90deg);
+            -webkit-transform: translate(-50%) rotate(-90deg);
+            -moz-transform: translate(-50%) rotate(-90deg);
+            -ms-transform: translate(-50%) rotate(-90deg);
+            -o-transform: translate(-50%) rotate(-90deg);
+   
+    
+    }
+
+@keyframes pointerRotateAnimation {
+
+        0% {
+            transform: translate(-50%) rotate(-90deg);
+            -webkit-transform: translate(-50%) rotate(-90deg);
+            -moz-transform: translate(-50%) rotate(-90deg);
+            -ms-transform: translate(-50%) rotate(-90deg);
+            -o-transform: translate(-50%) rotate(-90deg);
+        }
+
+        50% {
+            transform: translate(-50%) rotate(90deg);
+            -webkit-transform: translate(-50%) rotate(90deg);
+            -moz-transform: translate(-50%) rotate(90deg);
+            -ms-transform: translate(-50%) rotate(90deg);
+            -o-transform: translate(-50%) rotate(90deg);
+        }
+
+        100% {
+            transform: translate(-50%) rotate(${stopAngle}deg);
+            -webkit-transform: translate(-50%) rotate(${stopAngle}deg);
+            -moz-transform: translate(-50%) rotate(${stopAngle}deg);
+            -ms-transform: translate(-50%) rotate(${stopAngle}deg);
+            -o-transform: translate(-50%) rotate(${stopAngle}deg);
+        }
+
+    }
+
+
+    #pointer.stop{
+        transform: translate(-50%) rotate(${stopAngle}deg);
+        -webkit-transform: translate(-50%) rotate(${stopAngle}deg);
+        -moz-transform: translate(-50%) rotate(${stopAngle}deg);
+        -ms-transform: translate(-50%) rotate(${stopAngle}deg);
+        -o-transform: translate(-50%) rotate(${stopAngle}deg);
+        
+    }
+    
+}`;
+
+style.innerHTML = keyFrames
+myHead.appendChild(style);
+console.log(myHead)
+// case details pointer progress end
+
 
 const body = document.querySelector("html")
 
@@ -112,13 +186,13 @@ const passwordError = document.querySelector("#loginForm #passwordError");
 
 email.addEventListener("input", (e) => {
 
-    if(email.value){
+    if (email.value) {
         emailArea.classList.add("border")
         emailArea.classList.remove("error")
         emailError.classList.remove("active")
 
-     
-    }else{
+
+    } else {
         emailArea.classList.remove("border")
         emailArea.classList.remove("error")
         emailError.classList.remove("active")
@@ -144,13 +218,13 @@ password.addEventListener("input", (e) => {
 
 
 
-    
-    if(password.value){
+
+    if (password.value) {
         passwordArea.classList.add("border")
         passwordArea.classList.remove("error")
         passwordError.classList.remove("active")
-        
-    }else{
+
+    } else {
         passwordArea.classList.remove("border")
         passwordArea.classList.remove("error")
         passwordError.classList.remove("active")
