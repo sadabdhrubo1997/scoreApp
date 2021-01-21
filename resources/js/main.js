@@ -71,8 +71,15 @@ let caseScoreValue;
 window.onload = () => {
 
 
-    caseScoreValue = pointer.getAttribute('data-case-score') - 300;
-    percentage = .5 * caseScoreValue
+    caseScoreValue = pointer.getAttribute('data-case-score');
+    if (caseScoreValue > 500) {
+        caseScoreValue = 500
+    }
+    if (caseScoreValue < 100) {
+        caseScoreValue = 100
+    }
+    let caseScoreCalculatableValue = caseScoreValue - 300
+    percentage = .5 * caseScoreCalculatableValue
     // console.log("value : " +caseScoreValue)
     // console.log("percentage : " +percentage + "%")
     // console.log("pointer stop angle is: " + ((90 / 100) * percentage))
