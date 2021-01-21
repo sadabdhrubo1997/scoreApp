@@ -55,20 +55,27 @@ $("#caseDetails .section3 .detailsPageBottomTab").click(function () {
 
 
 // case details pointer progress
-let myHead = document.querySelector("#myHead")
-let pointer = document.querySelector("#pointer")
-var style = document.createElement('style');
-style.type = 'text/css';
-
-let stopAngle = 0;
+let pointerProgressWrapper = document.querySelector("#pointerProgressWrapper")
+window.addEventListener("scroll", (e) => {
+    let scroll = this.scrollY;
 
 
-setTimeout(() => {
-    pointer.classList.add("stop")
+    if (scroll > 300) {
+        function anmStart() {
+            let myHead = document.querySelector("#myHead")
+            let pointer = document.querySelector("#pointer")
+            var style = document.createElement('style');
+            
 
-}, 2000);
+            let stopAngle = 0;
 
-var keyFrames = `
+
+            setTimeout(() => {
+                pointer.classList.add("stop")
+
+            }, 2000);
+
+            var keyFrames = `
     #pointer{
     animation: pointerRotateAnimation 2s;
     -webkit-animation: pointerRotateAnimation 2s;
@@ -117,9 +124,14 @@ var keyFrames = `
     
 }`;
 
-style.innerHTML = keyFrames
-myHead.appendChild(style);
-console.log(myHead)
+            style.innerHTML = keyFrames
+            myHead.appendChild(style);
+        }
+        anmStart()
+    }
+})
+
+
 // case details pointer progress end
 
 

@@ -658,11 +658,12 @@
                                 position: absolute;
                                 top: 2rem;
                                 left: 50%;
-                                transform-origin: 50% 100%;                                
+                                transform-origin: 50% 100%;
                                 z-index: 1;
                                 pointer-events: none;
                                 animation: pointerRotateAnimation 2s linear;
                                 -webkit-animation: pointerRotateAnimation 2s linear;
+                                
                             }
 
 
