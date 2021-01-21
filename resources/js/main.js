@@ -55,36 +55,39 @@ $("#caseDetails .section3 .detailsPageBottomTab").click(function () {
 
 
 // case details pointer progress
-let pointerProgressWrapper = document.querySelector("#pointerProgressWrapper")
-window.addEventListener("scroll", (e) => {
-    let scroll = this.scrollY;
+var pointerProgressWrapper = document.querySelector("#pointerProgressWrapper")
 
 
-    if (scroll > 300) {
-        function anmStart() {
-            let myHead = document.querySelector("#myHead")
-            let pointer = document.querySelector("#pointer")
-            var style = document.createElement('style');
-            
-
-            let stopAngle = 0;
+let myHead = document.querySelector("#myHead")
+let pointer = document.querySelector("#pointer")
+var style = document.createElement('style');
+pointer.classList.add("default")
 
 
-            setTimeout(() => {
-                pointer.classList.add("stop")
 
-            }, 2000);
+let stopAngle = -40;
 
-            var keyFrames = `
+pointer.style.transform = `translate(-50%) rotate(${-90}deg)`
+
+
+setTimeout(() => {
+    // pointer.classList.remove("default")
+    // pointer.classList.add("stop")
+    pointer.style.transform = `translate(-50%) rotate(${stopAngle}deg)`
+
+}, 2000);
+
+function anmStart() {
+
+    var keyFrames = `
     #pointer{
     animation: pointerRotateAnimation 2s;
-    -webkit-animation: pointerRotateAnimation 2s;
-   
+    -webkit-animation: pointerRotateAnimation 2s; 
    
     
     }
 
-@keyframes pointerRotateAnimation {
+    @keyframes pointerRotateAnimation {
 
         0% {
             transform: translate(-50%) rotate(-90deg);
@@ -112,7 +115,7 @@ window.addEventListener("scroll", (e) => {
 
     }
 
-
+    /*
     #pointer.stop{
         transform: translate(-50%) rotate(${stopAngle}deg);
         -webkit-transform: translate(-50%) rotate(${stopAngle}deg);
@@ -120,13 +123,26 @@ window.addEventListener("scroll", (e) => {
         -ms-transform: translate(-50%) rotate(${stopAngle}deg);
         -o-transform: translate(-50%) rotate(${stopAngle}deg);
         
-    }
+    }*/
     
 }`;
 
-            style.innerHTML = keyFrames
-            myHead.appendChild(style);
-        }
+
+style.innerHTML = keyFrames
+myHead.appendChild(style);
+
+
+
+}
+
+window.addEventListener("scroll", (e) => {
+    let scroll = pointerProgressWrapper.scrollHeight - pointerProgressWrapper.clientHeight;
+    // console.log(pointerProgressWrapper.clientHeight)
+    // console.log(pointerProgressWrapper.offsetTop)
+    // console.log(window.scrollY)
+    if (window.scrollY > 350) {
+        console.log(window.scrollY)
+
         anmStart()
     }
 })
@@ -279,8 +295,6 @@ loginForm.addEventListener("submit", (e) => {
         // passwordWrongIcon.style.display = "block"
         // passwordRightIcon.style.display = "none"
         passwordArea.classList.remove("border")
-
-
 
     } else {
         passwordError.classList.remove("active")
