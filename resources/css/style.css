@@ -1859,7 +1859,7 @@ body {
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
-  background: conic-gradient(#60A1FF 45deg, #1BE082 45deg 90deg, transparent 90deg 270deg, #f53535 270deg 315deg, #FFC218 315deg);
+  background: conic-gradient(#60A1FF 40deg, #1BE082 40deg 90deg, transparent 90deg 270deg, #f53535 270deg 322deg, #FFC218 315deg);
   position: relative;
 }
 

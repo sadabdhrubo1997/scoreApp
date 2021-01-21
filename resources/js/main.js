@@ -63,10 +63,30 @@ let myHead = document.querySelector("#myHead")
 let pointer = document.querySelector("#pointer")
 var style = document.createElement('style');
 pointer.classList.add("default")
+let stopAngle = 0;
+
+let percentage;
+let caseScoreValue;
+
+window.onload = () => {
+
+
+    caseScoreValue = pointer.getAttribute('data-case-score') - 300;
+    percentage = .5 * caseScoreValue
+    // console.log("value : " +caseScoreValue)
+    // console.log("percentage : " +percentage + "%")
+    // console.log("pointer stop angle is: " + ((90 / 100) * percentage))
+    stopAngle = ((90 / 100) * percentage)
+
+}
 
 
 
-let stopAngle = -30;
+// when case score value is grater then or equal 300
+
+
+
+
 
 pointer.style.transform = `translate(-50%) rotate(${-90}deg)`
 
@@ -78,9 +98,9 @@ function anmStart() {
         // pointer.classList.remove("default")
         // pointer.classList.add("stop")
         pointer.style.transform = `translate(-50%) rotate(${stopAngle}deg)`
-    
+
     }, 1900);
-     
+
     var keyFrames = `
     #pointer{
     animation: pointerRotateAnimation 2s;
@@ -133,7 +153,7 @@ function anmStart() {
     style.innerHTML = keyFrames
     let innerHtmlDone = myHead.appendChild(style);
 
-   
+
 
 
 
@@ -146,10 +166,10 @@ window.addEventListener("scroll", (e) => {
     // console.log(window.scrollY)
     if (window.scrollY > 350) {
         scrollAnmStart = true
-        console.log(window.scrollY)
-        console.log(scrollAnmStart)
+        // console.log(window.scrollY)
+        // console.log(scrollAnmStart)
         if (scrollAnmStart == true) {
-            console.log("hello this is true animation start")
+            // console.log("hello this is true animation start")
         }
         anmStart()
     }
