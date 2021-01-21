@@ -72,11 +72,7 @@ var keyFrames = `
     #pointer{
     animation: pointerRotateAnimation 2s;
     -webkit-animation: pointerRotateAnimation 2s;
-    transform: translate(-50%) rotate(-90deg);
-            -webkit-transform: translate(-50%) rotate(-90deg);
-            -moz-transform: translate(-50%) rotate(-90deg);
-            -ms-transform: translate(-50%) rotate(-90deg);
-            -o-transform: translate(-50%) rotate(-90deg);
+   
    
     
     }
