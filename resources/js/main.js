@@ -57,6 +57,7 @@ $("#caseDetails .section3 .detailsPageBottomTab").click(function () {
 // case details pointer progress
 var pointerProgressWrapper = document.querySelector("#pointerProgressWrapper")
 
+let scrollAnmStart = false
 
 let myHead = document.querySelector("#myHead")
 let pointer = document.querySelector("#pointer")
@@ -65,20 +66,21 @@ pointer.classList.add("default")
 
 
 
-let stopAngle = -40;
+let stopAngle = -30;
 
 pointer.style.transform = `translate(-50%) rotate(${-90}deg)`
 
 
-setTimeout(() => {
-    // pointer.classList.remove("default")
-    // pointer.classList.add("stop")
-    pointer.style.transform = `translate(-50%) rotate(${stopAngle}deg)`
 
-}, 2000);
 
 function anmStart() {
-
+    setTimeout(() => {
+        // pointer.classList.remove("default")
+        // pointer.classList.add("stop")
+        pointer.style.transform = `translate(-50%) rotate(${stopAngle}deg)`
+    
+    }, 1900);
+     
     var keyFrames = `
     #pointer{
     animation: pointerRotateAnimation 2s;
@@ -128,8 +130,10 @@ function anmStart() {
 }`;
 
 
-style.innerHTML = keyFrames
-myHead.appendChild(style);
+    style.innerHTML = keyFrames
+    let innerHtmlDone = myHead.appendChild(style);
+
+   
 
 
 
@@ -141,8 +145,12 @@ window.addEventListener("scroll", (e) => {
     // console.log(pointerProgressWrapper.offsetTop)
     // console.log(window.scrollY)
     if (window.scrollY > 350) {
+        scrollAnmStart = true
         console.log(window.scrollY)
-
+        console.log(scrollAnmStart)
+        if (scrollAnmStart == true) {
+            console.log("hello this is true animation start")
+        }
         anmStart()
     }
 })
