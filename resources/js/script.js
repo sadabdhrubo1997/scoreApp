@@ -1,3 +1,4 @@
+
 /*
 let data = {
 	// A labels array that can contain any sort of values
@@ -65,24 +66,14 @@ var chart = new Chartist.Line('#myChart', data, options);
 */
 
 
-let hello;
-hello = false
-
-window.addEventListener("scroll", () => {
-	if (window.scrollY > 350) {
-		hello = true
-
-	}
-})
-
 
 var chart = new Chartist.Line('#myChart', {
-	labels: ['10/12/2020', '12/12/2020', '14/12/2020', '16/12/2020', '18/12/2020', '20/12/2020'],
+	labels: ['10/12/2020', '12/12/2020', '14/12/2020', '16/12/2020', '18/12/2020', '20/12/2020'],	
 	series: [
 		[10, 12, 12, 14, 14, 16],
 		[16, 14, 14, 16, 16.5, 20]
 	]
-}, {
+  }, {
 	lineSmooth: false,
 	high: 20,
 	low: 10,
@@ -105,23 +96,23 @@ var chart = new Chartist.Line('#myChart', {
 		bottom: 0,
 		left: 0
 	}
+	
+  });
+  
 
-});
-
-
-
-
-	chart.on('draw', function (data) {
-		if ((data.type === 'line' || data.type === 'area') && hello == true) {
-			data.element.animate({
+  
+		
+		chart.on('draw', function(data) {
+			if(data.type === 'line' || data.type === 'area') {
+			  data.element.animate({
 				d: {
-					begin: 2000 * data.index,
-					dur: 2000,
-					from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
-					to: data.path.clone().stringify(),
-					easing: Chartist.Svg.Easing.easeOutQuint
+				  begin: 2000 * data.index,
+				  dur: 2000,
+				  from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+				  to: data.path.clone().stringify(),
+				  easing: Chartist.Svg.Easing.easeOutQuint
 				}
-			});
-		}
-	});
-
+			  });
+			}
+		  });
+		
