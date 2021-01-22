@@ -62,7 +62,8 @@ let scrollAnmStart = false
 let myHead = document.querySelector("#myHead")
 let pointer = document.querySelector("#pointer")
 var style = document.createElement('style');
-pointer.classList.add("default")
+// pointer.classList.add("default")
+$("#pointer").addClass("default")
 let stopAngle = 0;
 
 let percentage;
@@ -95,7 +96,7 @@ window.onload = () => {
 
 
 
-pointer.style.transform = `translate(-50%) rotate(${-90}deg)`
+// pointer.style.transform = `translate(-50%) rotate(${-90}deg)`
 
 
 
@@ -167,17 +168,12 @@ function anmStart() {
 }
 
 window.addEventListener("scroll", (e) => {
-    let scroll = pointerProgressWrapper.scrollHeight - pointerProgressWrapper.clientHeight;
+    // let scroll = pointerProgressWrapper.scrollHeight - pointerProgressWrapper.clientHeight;
     // console.log(pointerProgressWrapper.clientHeight)
     // console.log(pointerProgressWrapper.offsetTop)
     // console.log(window.scrollY)
     if (window.scrollY > 350) {
-        scrollAnmStart = true
-        // console.log(window.scrollY)
-        // console.log(scrollAnmStart)
-        if (scrollAnmStart == true) {
-            // console.log("hello this is true animation start")
-        }
+   
         anmStart()
     }
 })
@@ -233,15 +229,7 @@ const emailError = document.querySelector("#loginForm #emailError");
 const password = document.querySelector("#loginForm #password");
 const passwordArea = document.querySelector("#loginForm .password");
 const passwordError = document.querySelector("#loginForm #passwordError");
-// const emailWrongIcon = document.querySelector("#loginForm .email .right .wrongIcon");
-// const emailRightIcon = document.querySelector("#loginForm .email .right .rightIcon");
-// const passwordWrongIcon = document.querySelector("#loginForm .password .right .wrongIcon");
-// const passwordRightIcon = document.querySelector("#loginForm .password .right .rightIcon");
 
-// emailWrongIcon.style.display = 'none';
-// emailRightIcon.style.display = 'none';
-// passwordWrongIcon.style.display = 'none';
-// passwordRightIcon.style.display = 'none';
 
 email.addEventListener("input", (e) => {
 
@@ -274,9 +262,6 @@ email.addEventListener("input", (e) => {
 
 password.addEventListener("input", (e) => {
     passwordError.classList.remove("active")
-
-
-
 
     if (password.value) {
         passwordArea.classList.add("border")
