@@ -1,6 +1,6 @@
 		let data = {
 			// A labels array that can contain any sort of values
-			labels: ['10/12/2020', '12/12/2020', '14/12/2020', '16/12/2020', '18/12/2020', '20/12/2020'],
+			labels: ['12/10/2020', '12/12/2020', '12/14/2020', '12/16/2020', '12/18/2020', '12/20/2020'],
 			// Our series array that contains series objects or in this case series data arrays
 
 			series: [

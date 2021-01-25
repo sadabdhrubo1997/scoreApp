@@ -1642,12 +1642,101 @@ body {
 
 #caseDetails .section2 .value_timeline {
   width: 33.5%;
-  background-color: #fff;
+  background-color: white;
   border-radius: 1.5rem;
   -webkit-border-radius: 1.5rem;
   -moz-border-radius: 1.5rem;
   -ms-border-radius: 1.5rem;
   -o-border-radius: 1.5rem;
+  position: relative;
+}
+
+#caseDetails .section2 .value_timeline::after {
+  position: absolute;
+  content: '';
+  height: 63%;
+  width: 89%;
+  top: 15%;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transition: 1.999s;
+  -webkit-transition: 1.999s;
+  -moz-transition: 1.999s;
+  -ms-transition: 1.999s;
+  -o-transition: 1.999s;
+}
+
+@media (min-width: 1367px) {
+  #caseDetails .section2 .value_timeline::after {
+    position: absolute;
+    content: '';
+    height: 63%;
+    width: 89%;
+    top: 15%;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    transition: 1.999s;
+    -webkit-transition: 1.999s;
+    -moz-transition: 1.999s;
+    -ms-transition: 1.999s;
+    -o-transition: 1.999s;
+  }
+}
+
+@media (min-width: 1439px) {
+  #caseDetails .section2 .value_timeline::after {
+    position: absolute;
+    content: '';
+    height: 63%;
+    width: 89%;
+    top: 15%;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    transition: 1.999s;
+    -webkit-transition: 1.999s;
+    -moz-transition: 1.999s;
+    -ms-transition: 1.999s;
+    -o-transition: 1.999s;
+  }
+}
+
+@media (min-width: 1599px) {
+  #caseDetails .section2 .value_timeline::after {
+    position: absolute;
+    content: '';
+    height: 64%;
+    width: 90%;
+    top: 15%;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    transition: 1.999s;
+    -webkit-transition: 1.999s;
+    -moz-transition: 1.999s;
+    -ms-transition: 1.999s;
+    -o-transition: 1.999s;
+  }
+}
+
+@media (min-width: 1920px) {
+  #caseDetails .section2 .value_timeline::after {
+    position: absolute;
+    content: '';
+    height: 64.5%;
+    width: 91.5%;
+    top: 15%;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    transition: 1.999s;
+    -webkit-transition: 1.999s;
+    -moz-transition: 1.999s;
+    -ms-transition: 1.999s;
+    -o-transition: 1.999s;
+  }
 }
 
 #caseDetails .section2 .value_timeline h2 {
@@ -1763,6 +1852,10 @@ body {
   -ms-border-radius: .3rem;
   -o-border-radius: .3rem;
   margin-right: 1rem;
+}
+
+#caseDetails .section2 .value_timeline.active::after {
+  width: 0;
 }
 
 #caseDetails .section2 .case_score {

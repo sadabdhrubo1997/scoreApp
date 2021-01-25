@@ -437,12 +437,110 @@
 
         .value_timeline {
             width: 33.5%;
-            background-color: #fff;
+            background-color: rgb(255, 255, 255);
             border-radius: 1.5rem;
             -webkit-border-radius: 1.5rem;
             -moz-border-radius: 1.5rem;
             -ms-border-radius: 1.5rem;
             -o-border-radius: 1.5rem;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                height: 63%;
+                width: 89%;
+                top: 15%;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(255, 255, 255);
+                transition: 1.999s;
+                -webkit-transition: 1.999s;
+                -moz-transition: 1.999s;
+                -ms-transition: 1.999s;
+                -o-transition: 1.999s;
+            }
+
+            @media (min-width: 1367px) {
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 63%;
+                    width: 89%;
+                    top: 15%;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgb(255, 255, 255);
+                    transition: 1.999s;
+                    -webkit-transition: 1.999s;
+                    -moz-transition: 1.999s;
+                    -ms-transition: 1.999s;
+                    -o-transition: 1.999s;
+                }
+            }
+
+            @media (min-width: 1439px) {
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 63%;
+                    width: 89%;
+                    top: 15%;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgb(255, 255, 255);
+                    transition: 1.999s;
+                    -webkit-transition: 1.999s;
+                    -moz-transition: 1.999s;
+                    -ms-transition: 1.999s;
+                    -o-transition: 1.999s;
+                }
+            }
+
+            @media (min-width: 1599px) {
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 64%;
+                    width: 90%;
+                    top: 15%;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgb(255, 255, 255);
+                    transition: 1.999s;
+                    -webkit-transition: 1.999s;
+                    -moz-transition: 1.999s;
+                    -ms-transition: 1.999s;
+                    -o-transition: 1.999s;
+                }
+            }
+
+            @media (min-width: 1920px) {
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 64.5%;
+                    width: 91.5%;
+                    top: 15%;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgb(255, 255, 255);
+                    transition: 1.999s;
+                    -webkit-transition: 1.999s;
+                    -moz-transition: 1.999s;
+                    -ms-transition: 1.999s;
+                    -o-transition: 1.999s;
+                }
+            }
+
+
+
+
+
+
+
+
+
 
 
             h2 {
@@ -475,6 +573,7 @@
                 height: 100%;
                 width: 100%;
                 position: relative;
+
 
             }
 
@@ -561,6 +660,14 @@
                         margin-right: 1rem;
                     }
                 }
+            }
+        }
+
+        .value_timeline.active {
+            &::after {
+
+               width: 0;
+
             }
         }
 
@@ -663,10 +770,10 @@
                                 pointer-events: none;
                                 animation: pointerRotateAnimation 2s;
                                 -webkit-animation: pointerRotateAnimation 2s;
-                               
+
                             }
 
-                            .pointer.default{
+                            .pointer.default {
                                 transform: translate(-50%) rotate(-90deg);
                                 -webkit-transform: translate(-50%) rotate(-90deg);
                                 -moz-transform: translate(-50%) rotate(-90deg);

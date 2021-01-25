@@ -103,17 +103,13 @@ window.onload = () => {
 
 function anmStart() {
     setTimeout(() => {
-        // pointer.classList.remove("default")
-        // pointer.classList.add("stop")
         pointer.style.transform = `translate(-50%) rotate(${stopAngle}deg)`
-
     }, 1900);
 
     var keyFrames = `
     #pointer{
     animation: pointerRotateAnimation 2s;
-    -webkit-animation: pointerRotateAnimation 2s; 
-   
+    -webkit-animation: pointerRotateAnimation 2s;    
     
     }
 
@@ -167,14 +163,21 @@ function anmStart() {
 
 }
 
+
+function valueTimeline(){
+    console.log("value timeline")
+    const VT = document.querySelector("#value_timeline")
+    VT.classList.add("active")
+}
+
 window.addEventListener("scroll", (e) => {
     // let scroll = pointerProgressWrapper.scrollHeight - pointerProgressWrapper.clientHeight;
     // console.log(pointerProgressWrapper.clientHeight)
     // console.log(pointerProgressWrapper.offsetTop)
     // console.log(window.scrollY)
-    if (window.scrollY > 350) {
-   
+    if (window.scrollY > 350) {   
         anmStart()
+        valueTimeline()
     }
 })
 
